@@ -1,378 +1,459 @@
 export default [
   {
-    "id": "ada-lovelace",
-    "name": "Ada Lovelace",
-    "shortDescription": "Pionera en la programación, primera programadora de la historia.",
-    "description": "Una visionaria matemática británica del siglo XIX, es aclamada como la primera programadora de la historia. Su colaboración con Charles Babbage en la creación de la Máquina Analítica la llevó a desarrollar algoritmos, incluyendo el famoso \"algoritmo de Bernoulli\", destinados a ser procesados por una máquina. Su visión pionera la convirtió en una figura fundamental en la informática y la inteligencia artificial. Lovelace demostró que las computadoras podían ir más allá de simples cálculos matemáticos, anticipando un mundo donde la programación sería esencial en la resolución de problemas complejos, dejando una huella imborrable en la ciencia y la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/ada-lovelace.jpg",
-    "facts": {
-      "yearOfBirth": "1815",
-      "yearOfDeath": "1852",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/genera-una-imagen-de-ada-lovelace2c-la-primera-prog/650a1eff8ff04b88833d5cdef0309441"
+    id: '1',
+    name: 'Symphony of the Seas',
+    shortDescription: 'Descubre la grandeza en Symphony of the Seas, el crucero más grande del mundo. ¡Aventuras emocionantes te esperan!',
+    description: 'Symphony of the Seas, parte de la flota de Royal Caribbean Group, es el crucero más grande del mundo. Con un ambiente lujoso y emocionante, ofrece una experiencia única. Explora destinos exóticos, disfruta de deliciosa gastronomía y participa en actividades emocionantes. Con una eslora impresionante, este barco ha sido construido con tecnología de vanguardia. Disfruta de tus vacaciones con comodidades de primera clase y un itinerario que te llevará a lugares inolvidables.',
+    imageUrl: 'https://www.bing.com/images/create/crucero-symphony-of-the-seas-destination-islas-del/1-659c7df7dbdf4e939bb321136f5ad643?id=a5u4lRxIu5lGNn8Mc47XDA%3D%3D&view=detailv2&idpp=genimg&form=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2018',
+      size: '362m',
+      mainField: 'Clase Oasis',
+      itinerary: ['Miami', 'Cococay', 'Cozumel', 'Roatán', 'Puerto Costa Maya'],
+      departurePort: 'Miami',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,500',
+      cruiseDates: ['2024-05-01', '2024-05-08', '2024-05-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Actividades para niños', 'Spa']
     }
   },
   {
-    "id": "emmy-noether",
-    "name": "Emmy Noether",
-    "shortDescription": "Matemática destacada, teorema fundamental en álgebra abstracta.",
-    "description": "Una brillante matemática alemana, revolucionó la física teórica con sus contribuciones al teorema de conservación de la energía y el teorema de Noether, fundamentales en la teoría de la relatividad y la mecánica cuántica. A pesar de los obstáculos que enfrentó como mujer en la academia, sus investigaciones en álgebra abstracta y teoría de grupos son fundamentales en la física moderna. Su capacidad para unificar conceptos matemáticos y físicos marcó un hito en la historia de la ciencia, allanando el camino para futuras generaciones de científicas.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
-    "facts": {
-      "yearOfBirth": "1882",
-      "yearOfDeath": "1935",
-      "birthPlace": "Erlangen, Alemania",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-an-image-of-of-a-german-woman2c-a-pioneering/6510ddb1e8254b928b8f8f1d5e95fea4"
+    id: '2',
+    name: 'Harmony of the Seas',
+    shortDescription: 'Harmony of the Seas ofrece una experiencia inigualable en cruceros. Descubre lujo y entretenimiento mientras exploras destinos fascinantes en el Caribe.',
+    description: 'Harmony of the Seas, de Royal Caribbean Group, es un crucero que redefine la experiencia vacacional. Construido en 2016, este gigante de 362 metros de eslora pertenece a la Clase Oasis. Disfruta de itinerarios emocionantes que incluyen puertos como CocoCay, Nassau, Cozumel y Roatán. La salida se realiza desde Port Canaveral, explorando el Caribe en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/crucero-harmony-of-the-seas-destination-caribe/1-659c7d6726bb4b81b4d2ea48710cae1c?id=9806JqLIENpt3JWtwlA8dw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2016',
+      size: '362m',
+      mainField: 'Clase Oasis',
+      itinerary: ['Port Canaveral', 'CocoCay', 'Nassau', 'Día en el mar', 'Cozumel', 'Roatán', 'Falmouth'],
+      departurePort: 'Port Canaveral',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,800',
+      cruiseDates: ['2024-06-01', '2024-06-08', '2024-06-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "hypatia-de-alejandria",
-    "name": "Hypatia de Alejandría",
-    "shortDescription": "Matemática y filósofa en la antigua Alejandría.",
-    "description": "Filósofa y matemática en la antigua Alejandría, desafió las normas de género de su época al destacar en una sociedad dominada por hombres. Su legado incluye importantes contribuciones a la geometría y la astronomía, así como su destacado papel como maestra y defensora del conocimiento en una época de agitación política. Hypatia demostró que las mujeres podían sobresalir en campos intelectuales y su valentía al mantener sus creencias filosóficas la convierte en un símbolo de resistencia y sabiduría en la historia de la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hypatia-de-alejandria.jpg",
-    "facts": {
-      "yearOfBirth": "circa 360",
-      "yearOfDeath": "415",
-      "birthPlace": "Alejandría, Egipto",
-      "mainField": "Matemáticas, Filosofía"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-a-vivid-digital-artwork-or-painting-that-de/6510df0ebe1a4807af22175452761e1a"
+    id: '3',
+    name: 'Oasis of the Seas',
+    shortDescription: 'Explora el lujo en Oasis of the Seas, un crucero de clase Oasis que ofrece experiencias únicas y emocionantes destinos en todo el mundo.',
+    description: 'Oasis of the Seas, de Royal Caribbean Group, es un crucero de Clase Oasis que redefine el significado de unas vacaciones inolvidables. Construido en 2009, este majestuoso barco de 360 metros de eslora combina elegancia con emoción. Con itinerarios que incluyen destinos como Labadee, Falmouth, Cozumel y Roatán, Oasis of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,600, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/oasis-of-the-seas-crucero-por-el-caribe/1-659c91efb0e34b9eb614044335dd7eae?id=RK2ITR%2bzVJTeK%2f%2btjuVkHg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2009',
+      size: '360m',
+      mainField: 'Clase Oasis',
+      itinerary: ['Miami', 'Labadee', 'Falmouth', 'Día en el mar', 'Cozumel', 'Roatán'],
+      departurePort: 'Miami',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,600',
+      cruiseDates: ['2024-07-01', '2024-07-08', '2024-07-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "marjorie-lee-browne",
-    "name": "Marjorie Lee Browne",
-    "shortDescription": "Matemática, contribuyó a la teoría de números.",
-    "description": "Matemática estadounidense, destacó en una época en la que las mujeres afroamericanas enfrentaban múltiples barreras en la educación superior. No solo obtuvo su doctorado en matemáticas, sino que también se convirtió en una destacada educadora, promoviendo la diversidad en las ciencias matemáticas y desafiando la discriminación racial y de género. Su compromiso con la educación y su capacidad para inspirar a futuras generaciones la convierten en un modelo a seguir para las mujeres en la ciencia, dejando una huella perdurable en la historia académica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjorie-lee-browne.jpg",
-    "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "1979",
-      "birthPlace": "Memphis, Estados Unidos",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/design-an-inspiring-and-historically-accurate-imag/6510df7e7bb745f69d67f695441607a8"
+    id: '4',
+    name: 'Allure of the Seas',
+    shortDescription: 'Allure of the Seas ofrece una experiencia excepcional en cruceros. Descubre el lujo y la diversión mientras exploras destinos emocionantes en el Caribe.',
+    description: 'Allure of the Seas, de Royal Caribbean Group, es un crucero que redefine el concepto de unas vacaciones de lujo. Construido en 2010, este impresionante barco de 362 metros de eslora pertenece a la Clase Oasis. Con itinerarios que incluyen destinos como CocoCay, Nassau, Cozumel y Roatán, Allure of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Port Canaveral en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,750, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/allure-of-the-seas-port-canaveral/1-659c92ad9af543c5923342f0ef3ac479?id=as0KsJmsbEHcyNhkNRtiuA%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2010',
+      size: '362m',
+      mainField: 'Clase Oasis',
+      itinerary: ['Port Canaveral', 'CocoCay', 'Nassau', 'Día en el mar', 'Cozumel', 'Roatán', 'Falmouth'],
+      departurePort: 'Port Canaveral',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,750',
+      cruiseDates: ['2024-08-01', '2024-08-08', '2024-08-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "shakuntala-devi",
-    "name": "Shakuntala Devi",
-    "shortDescription": "Matemática prodigio, conocida como la 'Calculadora Humana'.",
-    "description": "Conocida como \"la bruja de las matemáticas\" de la India, dejó una marca indeleble en el mundo de los números. Su capacidad mental asombrosa la llevó a resolver complejos cálculos matemáticos mentalmente en cuestión de segundos, estableciendo récords mundiales. Además de su talento innato, Devi promovió activamente la educación matemática y luchó por la igualdad de género en un país donde las mujeres enfrentaban desafíos en la ciencia y la educación. Su legado destaca el poder de la mente humana y la importancia de la igualdad de oportunidades en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shakuntala-devi.jpg",
-    "facts": {
-      "yearOfBirth": "1929",
-      "yearOfDeath": "2013",
-      "birthPlace": "Bangalore, India",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
+    id: '5',
+    name: 'Quantum of the Seas',
+    shortDescription: 'Embárcate en una aventura única con Quantum of the Seas. Este crucero de Clase Quantum te lleva a destinos emocionantes con comodidades de primer nivel.',
+    description: 'Quantum of the Seas, de Royal Caribbean Group, es un crucero de Clase Quantum que ofrece una experiencia única y emocionante. Construido en 2014, este innovador barco de 347 metros de eslora combina tecnología de vanguardia con lujo. Con itinerarios que incluyen destinos como Singapur, Phuket, Penang y Kuala Lumpur, Quantum of the Seas te llevará a lugares fascinantes en Asia. Disfruta de una salida desde Singapur en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,000, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/quantum-of-the-seas-at-singapur/1-659c943c77a34987b8d27d89512c0690?id=1BWNXlkDHYsBQJLkTzp0nw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2014',
+      size: '347m',
+      mainField: 'Clase Quantum',
+      itinerary: ['Singapur', 'Penang', 'Langkawi', 'Phuket', 'Kuala Lumpur'],
+      departurePort: 'Singapur',
+      destination: 'Sudeste Asiático',
+      durationInDays: 10,
+      price: '$2,000',
+      cruiseDates: ['2024-09-01', '2024-09-10', '2024-09-20'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "sofia-kovalevskaya",
-    "name": "Sofia Kovalevskaya",
-    "shortDescription": "Matemática y escritora, contribuyó a la teoría de funciones.",
-    "description": "Matemática rusa del siglo XIX, dejó una marca indeleble en la ciencia del siglo XIX al desafiar las barreras de género. Como matemática rusa, superó las restricciones sociales de su época para convertirse en la primera mujer en obtener un doctorado en matemáticas en Europa. Sus contribuciones a la teoría de las ecuaciones diferenciales y la mecánica revolucionaron la disciplina, abriendo nuevas perspectivas en el análisis matemático. Su destacada membresía en la Academia de Ciencias de Suecia marcó un hito en la historia de las mujeres en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sofia-kovalevskaya.jpg",
-    "facts": {
-      "yearOfBirth": "1850",
-      "yearOfDeath": "1891",
-      "birthPlace": "Moscú, Rusia",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
+    id: '6',
+    name: 'Anthem of the Seas',
+    shortDescription: 'Anthem of the Seas ofrece una experiencia única en cruceros. Descubre el lujo y la diversión mientras exploras destinos emocionantes en Europa y América del Norte.',
+    description: 'Anthem of the Seas, de Royal Caribbean Group, es un crucero que redefine el concepto de unas vacaciones de lujo. Construido en 2015, este impresionante barco de 348 metros de eslora pertenece a la Clase Quantum. Con itinerarios que incluyen destinos como Southampton, Le Havre, Gijón, Vigo y Lisboa, Anthem of the Seas te llevará a lugares fascinantes en Europa y América del Norte. Disfruta de una salida desde Southampton en un viaje de 12 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,500, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/anthem-of-the-seas-southampton/1-659ca25170214c9a8dc65370309f370c?id=SxYMaeMpa1%2b4zvwDuYFRMA%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2015',
+      size: '348m',
+      mainField: 'Clase Quantum',
+      itinerary: ['Southampton', 'Le Havre', 'Gijón', 'Vigo', 'Lisboa'],
+      departurePort: 'Southampton',
+      destination: 'Europa y América del Norte',
+      durationInDays: 12,
+      price: '$2,500',
+      cruiseDates: ['2024-10-01', '2024-10-13', '2024-10-25'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "yoko-shimomura",
-    "name": "Yoko Shimomura",
-    "shortDescription": "Compositora de música, destacada en la industria de los videojuegos.",
-    "description": "Compositora japonesa, es una figura destacada en la ciencia de la música y el arte sonoro. Aunque no se dedica a la ciencia en el sentido tradicional, su trabajo en la composición musical ha requerido un profundo entendimiento de la teoría musical y la tecnología de audio. Ha contribuido de manera significativa a la industria de los videojuegos, componiendo icónicas bandas sonoras que han enriquecido la experiencia de juego. Su éxito en un campo donde las mujeres estaban subrepresentadas la convierte en un modelo a seguir, incluso en campos no convencionales como la composición musical.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/yoko-shimomura.jpg",
-    "facts": {
-      "yearOfBirth": "1967",
-      "birthPlace": "Hyogo, Japón",
-      "mainField": "Composición Musical, Video Juegos"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/yoko-shimomura-making-music-for-a-video-game-in-19/6510e40dd1eb45d0906e8c1f4bb601d3"
+    id: '7',
+    name: 'Ovation of the Seas',
+    shortDescription: 'Embárcate en una aventura única con Ovation of the Seas. Este crucero de Clase Quantum te lleva a destinos emocionantes con comodidades de primer nivel.',
+    description: 'Ovation of the Seas, de Royal Caribbean Group, es un crucero de Clase Quantum que ofrece una experiencia única y emocionante. Construido en 2016, este innovador barco de 347 metros de eslora combina tecnología de vanguardia con lujo. Con itinerarios que incluyen destinos como Sydney, Hobart, Milford Sound, Dunedin y Wellington, Ovation of the Seas te llevará a lugares fascinantes en Australia y Nueva Zelanda. Disfruta de una salida desde Sydney en un viaje de 14 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/ovation-of-the-seas-sydney/1-659ca2d85293489f8bf8945c53f9e1da?id=Wn96io5MDkBvrrF4DeGk4g%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2016',
+      size: '347m',
+      mainField: 'Clase Quantum',
+      itinerary: ['Sydney', 'Hobart', 'Milford Sound', 'Dunedin', 'Wellington'],
+      departurePort: 'Sydney',
+      destination: 'Australia y Nueva Zelanda',
+      durationInDays: 14,
+      price: '$2,800',
+      cruiseDates: ['2024-11-01', '2024-11-15', '2024-11-29'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "maryam-mirzakhani",
-    "name": "Maryam Mirzakhani",
-    "shortDescription": "Matemática, ganadora del Premio Fields.",
-    "description": "Matemática iraní, hizo historia al convertirse en la primera mujer en ganar la Medalla Fields, el premio más prestigioso en matemáticas. Sus investigaciones en la geometría de superficies y la teoría de las superficies de Riemann han tenido un impacto duradero en la matemática pura. A lo largo de su carrera, Mirzakhani inspiró a muchas mujeres a perseguir carreras en ciencia y matemáticas, derribando las barreras de género. Su enfoque innovador y su capacidad para resolver problemas complejos la convierten en un modelo a seguir para la comunidad científica y en un símbolo de la excelencia matemática.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maryam-mirzakhani.jpg",
-    "facts": {
-      "yearOfBirth": "1977",
-      "yearOfDeath": "2017",
-      "birthPlace": "Teherán, Irán",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://chalkdustmagazine.com/features/mathematics-maryam-mirzakhani/"
+    id: '8',
+    name: 'Independence of the Seas',
+    shortDescription: 'Disfruta de la libertad en Independence of the Seas, un crucero que combina lujo y diversión en itinerarios emocionantes por el Caribe.',
+    description: 'Independence of the Seas, de Royal Caribbean Group, es un crucero que te ofrece la libertad de disfrutar de unas vacaciones inolvidables. Construido en 2008, este espléndido barco de 339 metros de eslora pertenece a la Clase Freedom. Con itinerarios que incluyen destinos como Labadee, Falmouth, Cozumel y Roatán, Independence of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Fort Lauderdale en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo',
+    imageUrl: 'https://www.bing.com/images/create/independence-of-the-seas-at-cozumel-mexico/1-659ca3349ae542d4b61d562d577212d0?id=y2tTccsVa89VOuE%2b8mRtrw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2008',
+      size: '339m',
+      mainField: 'Clase Freedom',
+      itinerary: ['Fort Lauderdale', 'Labadee', 'Falmouth', 'Día en el mar', 'Cozumel', 'Roatán'],
+      departurePort: 'Fort Lauderdale',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,550',
+      cruiseDates: ['2024-12-01', '2024-12-08', '2024-12-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "adele-goldberg",
-    "name": "Adele Goldberg",
-    "shortDescription": "Informática pionera, co-creadora del lenguaje de programación Smalltalk.",
-    "description": "Informática estadounidense reconocida por su influyente trabajo en la investigación y desarrollo de la programación orientada a objetos. Su contribución más destacada es la creación del lenguaje de programación Smalltalk, que revolucionó la forma en que se desarrollan software y sistemas informáticos. Goldberg ha sido una defensora incansable de la usabilidad y la accesibilidad en la informática, asegurando que las aplicaciones informáticas sean más amigables para los usuarios. Su trabajo ha allanado el camino para una programación más intuitiva y eficiente, y su legado perdura en la industria de la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/adele-goldberg.jpg",
-    "facts": {
-      "yearOfBirth": "1945",
-      "birthPlace": "Chicago, Estados Unidos",
-      "mainField": "Ciencias de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://pionerasinformaticas.ujaen.es/en/computer-women-pioneers/adele-goldberg-en"
+    id: '9',
+    name: 'Liberty of the Seas',
+    shortDescription: 'Liberty of the Seas te invita a explorar el lujo y la diversión en un crucero excepcional. Descubre emocionantes destinos en el Caribe con comodidades exclusivas.',
+    description: 'Liberty of the Seas, de Royal Caribbean Group, es un crucero que reúne lujo y entretenimiento para ofrecer una experiencia inolvidable. Construido en 2007, este magnífico barco de 339 metros de eslora pertenece a la Clase Freedom. Con itinerarios que incluyen destinos como Cozumel, Roatán, Puerto Costa Maya y Nassau, Liberty of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Galveston en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,600, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/liberty-of-the-seas-at-galveston-texas/1-659ca3aed60d4306b46c81f18e04c40e?id=4SWfdGklWHHbLfBLnhzv8g%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2007',
+      size: '339m',
+      mainField: 'Clase Freedom',
+      itinerary: ['Galveston', 'Día en el mar', 'Cozumel', 'Roatán', 'Puerto Costa Maya', 'Nassau'],
+      departurePort: 'Galveston',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,600',
+      cruiseDates: ['2025-01-01', '2025-01-08', '2025-01-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "barbara-liskov",
-    "name": "Barbara Liskov",
-    "shortDescription": "Científica de la computación, pionera en programación orientada a objetos.",
-    "description": "Pionera de la informática, es conocida por su trabajo en la programación y la arquitectura de sistemas distribuidos. Fue la primera mujer en obtener un doctorado en ciencias de la computación en el Instituto de Tecnología de Stanford y desarrolló el lenguaje de programación CLU, que estableció fundamentos para la programación orientada a objetos. Liskov ha dejado una marca indeleble en la industria de la tecnología al liderar avances en sistemas de almacenamiento y seguridad informática. Su enfoque en la fiabilidad y la robustez ha influido en el diseño de sistemas críticos en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/barbara-liskov.jpg",
-    "facts": {
-      "yearOfBirth": "1939",
-      "birthPlace": "Los Angeles, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://medium.com/a-computer-of-ones-own/barbara-liskov-inventor-of-abstract-data-types-9f8908fdcf86"
+    id: '10',
+    name: 'Freedom of the Seas',
+    shortDescription: 'Explora la libertad en Freedom of the Seas, un crucero que ofrece comodidades excepcionales y emocionantes destinos en el Caribe.',
+    description: 'Freedom of the Seas, de Royal Caribbean Group, es un crucero que te invita a disfrutar de la libertad en cada rincón. Construido en 2006, este majestuoso barco de 339 metros de eslora pertenece a la Clase Freedom. Con itinerarios que incluyen destinos como Labadee, Falmouth, Cozumel y Roatán, Freedom of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde San Juan en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,550, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/freedom-of-the-seas-at-san-juan-puerto-rico/1-659ca4561c1b41fd98ca9bde6240d24f?id=WcyHFWSn%2f4BaFThWC7JvCw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2006',
+      size: '339m',
+      mainField: 'Clase Freedom',
+      itinerary: ['San Juan', 'Labadee', 'Falmouth', 'Día en el mar', 'Cozumel', 'Roatán'],
+      departurePort: 'San Juan',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,550',
+      cruiseDates: ['2025-02-01', '2025-02-08', '2025-02-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "grace-hopper",
-    "name": "Grace Hopper",
-    "shortDescription": "Científica de la computación, creadora del primer compilador.",
-    "description": "Una de las pioneras de la informática, es famosa por su contribución al desarrollo del primer compilador y al lenguaje de programación COBOL. Además, desafió los estereotipos de género en la década de 1940 al unirse a la Marina de los Estados Unidos y convertirse en la primera programadora de la computadora Harvard Mark I. Su legado abarca la creación de conceptos cruciales como la \"depuración de software\" y su influencia en el desarrollo de la informática moderna, estableciendo estándares para la programación de alto nivel y la innovación tecnológica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/grace-hopper.jpg",
-    "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1992",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://photos.com/featured/grace-hopper-with-early-computer-bettmann.html"
+    id: '11',
+    name: 'Adventure of the Seas',
+    shortDescription: 'Embárcate en una aventura única con Adventure of the Seas. Este crucero de Clase Voyager te lleva a destinos emocionantes con comodidades de primer nivel.',
+    description: 'Adventure of the Seas, de Royal Caribbean Group, es un crucero de Clase Voyager que ofrece una experiencia única y emocionante. Construido en 2001, este innovador barco de 311 metros de eslora combina tecnología de vanguardia con lujo. Con itinerarios que incluyen destinos como Aruba, Curazao, Bonaire y St. Maarten, Adventure of the Seas te llevará a lugares fascinantes en el Caribe. Disfruta de una salida desde San Juan en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,450, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/freedom-of-the-seas-at-san-juan-puerto-rico/1-659ca4561c1b41fd98ca9bde6240d24f?id=WcyHFWSn%2f4BaFThWC7JvCw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2001',
+      size: '311m',
+      mainField: 'Clase Voyager',
+      itinerary: ['San Juan', 'St. Thomas', 'Aruba', 'Curazao', 'Bonaire'],
+      departurePort: 'San Juan',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,450',
+      cruiseDates: ['2025-03-01', '2025-03-08', '2025-03-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "margaret-hamilton",
-    "name": "Margaret Hamilton",
-    "shortDescription": "Científica de la computación, lideró desarrollo de software para Apollo 11.",
-    "description": "Destacada científica de la computación que desempeñó un papel fundamental en el programa Apollo de la NASA. Fue directora de la División de Ingeniería de Software en el Laboratorio de Instrumentación del MIT, donde desarrolló el concepto de \"ingeniería de software\". Su liderazgo en el desarrollo del software de vuelo para las misiones Apollo fue fundamental para el éxito de la llegada del hombre a la Luna. Hamilton es un ejemplo de cómo la tecnología y la ciencia pueden alcanzar logros extraordinarios cuando se combinan con un enfoque innovador y una visión audaz.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/margaret-hamilton.jpg",
-    "facts": {
-      "yearOfBirth": "1936",
-      "birthPlace": "Paoli, Indiana, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://odetta.ai/blogs/margaret-hamilton-the-first-software-engineer"
+    id: '12',
+    name: 'Explorer of the Seas',
+    shortDescription: 'Explorer of the Seas ofrece una experiencia excepcional en cruceros. Descubre el lujo y la diversión mientras exploras destinos emocionantes en el Caribe.',
+    description: 'Explorer of the Seas, de Royal Caribbean Group, es un crucero que redefine el concepto de unas vacaciones de lujo. Construido en 2000, este impresionante barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como San Juan, St. Thomas, St. Maarten y Antigua, Explorer of the Seas te llevará a lugares fascinantes en el Caribe. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,500, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/explorer-of-the-seas-at-st-maarten/1-659caace3a3a472aa67257ec2c0be5b3?FORM=GENCRE',
+    facts: {
+      yearOfBuild: '2000',
+      size: '311m',
+      mainField: 'Clase Voyager',
+      itinerary: ['Miami', 'Día en el mar', 'San Juan', 'St. Thomas', 'St. Maarten', 'Antigua'],
+      departurePort: 'Miami',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,500',
+      cruiseDates: ['2025-04-01', '2025-04-08', '2025-04-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "radia-perlman",
-    "name": "Radia Perlman",
-    "shortDescription": "Ingeniera de redes, inventora del algoritmo Spanning Tree.",
-    "description": "Científica de la computación estadounidense, ha dejado una marca indeleble en el mundo de las redes informáticas y la seguridad. Conocida como \"la madre de Internet\", su invención del algoritmo Spanning Tree Protocol (STP) revolucionó la conectividad de redes y sentó las bases para la infraestructura de Internet moderna. A pesar de operar en un campo dominado por hombres, Perlman ha demostrado que las mujeres pueden liderar avances tecnológicos vitales. Su compromiso con la resiliencia de las redes y la ciberseguridad ha influido en la estabilidad y confiabilidad de la comunicación en línea.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/radia-perlman.jpg",
-    "facts": {
-      "yearOfBirth": "1951",
-      "birthPlace": "Portsmouth, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://hackaday.com/2018/05/29/spanning-the-tree-dr-radia-perlman-untangling-networks/"
+    id: '13',
+    name: 'Navigator of the Seas',
+    shortDescription: 'Embárcate en una experiencia inolvidable con Navigator of the Seas. Este crucero te llevará a destinos fascinantes con comodidades de primera clase.',
+    description: 'Navigator of the Seas, de Royal Caribbean Group, es un crucero que promete una experiencia inolvidable. Construido en 2002, este magnífico barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como Labadee, Falmouth, Cozumel y Roatán, Navigator of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,500, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'https://www.bing.com/images/create/navigatorof-the-seas-at-falmouth-jamaica/1-659caa3ad13e4510adff9ea0c2e60562?id=XE5rd1T9x0H5%2B%2BTIYcxFBw.OQtxcQ0aAnE41vDFvZ1%2FPQ&view=detailv2&idpp=genimg&form=GCRIDP&ajaxhist=0&ajaxserp=0',
+    facts: {
+      yearOfBuild: '2002',
+      size: '311m',
+      mainField: 'Clase Voyager',
+      itinerary: ['Miami', 'Labadee', 'Falmouth', 'Día en el mar', 'Cozumel', 'Roatán'],
+      departurePort: 'Miami',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,500',
+      cruiseDates: ['2025-05-01', '2025-05-08', '2025-05-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "shafi-goldwasser",
-    "name": "Shafi Goldwasser",
-    "shortDescription": "Científica de la computación, ganadora del Premio Turing.",
-    "description": "Es una destacada criptógrafa y científica de la computación que ha contribuido significativamente a la teoría de la computación y la seguridad de la información. Su trabajo en criptografía de probabilidad y complejidad computacional ha sentado las bases para la seguridad en línea y la privacidad de datos en un mundo cada vez más digitalizado. Goldwasser es un ejemplo de cómo la ciencia de la computación puede abordar desafíos contemporáneos y proteger la información en la era de la información.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shafi-goldwasser.jpg",
-    "facts": {
-      "yearOfBirth": "1958",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.jahresbericht2019.unibe.ch/successes_2019/einstein_lectures/index_eng.html"
+    id: '14',
+    name: 'Mariner of the Seas',
+    shortDescription: 'Explora la grandeza en Mariner of the Seas, un crucero que ofrece lujo y diversión en itinerarios emocionantes por el Caribe.',
+    description: 'Mariner of the Seas, de Royal Caribbean Group, es un crucero que te invita a explorar la grandeza. Construido en 2003, este majestuoso barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como Nassau, CocoCay, Cozumel y Roatán, Mariner of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Port Canaveral en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,550, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '2003',
+      size: '311m',
+      mainField: 'Clase Voyager',
+      itinerary: ['Port Canaveral', 'CocoCay', 'Nassau', 'Día en el mar', 'Cozumel', 'Roatán'],
+      departurePort: 'Port Canaveral',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,550',
+      cruiseDates: ['2025-06-01', '2025-06-08', '2025-06-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "chien-shiung-wu",
-    "name": "Chien-Shiung Wu",
-    "shortDescription": "Física experimental, contribuyó a la física nuclear.",
-    "description": "Física experimental de origen chino, desafiando los prejuicios de género y nacionalidad, realizó experimentos fundamentales en física de partículas y contribuyó significativamente a la comprensión de la desintegración beta. Su famoso experimento \"Wu\" refutó la paridad en la física de partículas, lo que cambió la forma en que los científicos comprenden las fuerzas fundamentales de la naturaleza. Wu demostró que el talento y la perseverancia pueden superar cualquier barrera, y su legado sigue siendo un faro de inspiración para científicas en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/chien-shiung-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1912",
-      "yearOfDeath": "1997",
-      "birthPlace": "Liuhe, Taicang, China",
-      "mainField": "Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.thoughtco.com/chien-shiung-wu-biography-3530366"
+    id: '15',
+    name: 'Voyager of the Seas',
+    shortDescription: 'Vive la aventura en Voyager of the Seas, un crucero que combina emocionantes destinos con comodidades de primera clase.',
+    description: 'Voyager of the Seas, de Royal Caribbean Group, es un crucero que te llevará a vivir una aventura única. Construido en 1999, este impresionante barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como Sydney, Nouméa, Lifou y Mare, Voyager of the Seas te llevará a lugares fascinantes en Australia y el Pacífico. Disfruta de una salida desde Sydney en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '1999',
+      size: '311m',
+      mainField: 'Clase Voyager',
+      itinerary: ['Sydney', 'Nouméa', 'Lifou', 'Mare'],
+      departurePort: 'Sydney',
+      destination: 'Australia y el Pacífico',
+      durationInDays: 10,
+      price: '$1,800',
+      cruiseDates: ['2025-07-01', '2025-07-10', '2025-07-20'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "hedy-lamarr",
-    "name": "Hedy Lamarr",
-    "shortDescription": "Actriz e inventora, contribuyó al desarrollo de la tecnología de espectro ensanchado.",
-    "description": "Actriz austroamericana y científica, fue una mente brillante en la intersección de la tecnología y el entretenimiento. Junto con el compositor George Antheil, inventó un sistema de comunicación secreta durante la Segunda Guerra Mundial que sentó las bases para la tecnología de espectro ensanchado y la comunicación inalámbrica moderna. Lamarr demostró que las mujeres pueden destacar tanto en el cine como en la ciencia, y su legado como inventora ha sido fundamental para el desarrollo de la tecnología de comunicación inalámbrica que usamos en la actualidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hedy-lamarr.jpg",
-    "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "2000",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Actuación, Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.sparkfun.com/news/6147"
+    id: '16',
+    name: 'Radiance of the Seas',
+    shortDescription: 'Descubre la belleza en Radiance of the Seas, un crucero que ofrece lujo y entretenimiento en itinerarios emocionantes por Alaska y el Pacífico.',
+    description: 'Radiance of the Seas, de Royal Caribbean Group, es un crucero que te invita a descubrir la belleza. Construido en 2001, este espléndido barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como Seward, Juneau, Skagway y Victoria, Radiance of the Seas te llevará a lugares fascinantes en Alaska y el Pacífico. Disfruta de una salida desde Vancouver en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,700, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '2001',
+      size: '293m',
+      mainField: 'Clase Radiance',
+      itinerary: ['Vancouver', 'Seward', 'Juneau', 'Skagway', 'Victoria'],
+      departurePort: 'Vancouver',
+      destination: 'Alaska y el Pacífico',
+      durationInDays: 7,
+      price: '$1,700',
+      cruiseDates: ['2025-08-01', '2025-08-08', '2025-08-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "maria-goeppert-mayer",
-    "name": "Maria Goeppert Mayer",
-    "shortDescription": "Física teórica, ganadora del Premio Nobel de Física.",
-    "description": "Física teórica alemana-estadounidense, dejó una profunda huella en la física nuclear y la mecánica cuántica. Fue la segunda mujer en recibir el Premio Nobel de Física y su trabajo pionero en la estructura de capas nucleares revolucionó nuestra comprensión de los núcleos atómicos. A pesar de las barreras de género en la academia, su dedicación y talento la llevaron a contribuir significativamente a la teoría nuclear, abriendo el camino para futuras investigadoras en un campo dominado por hombres. Maria Goeppert Mayer es un ejemplo inspirador de excelencia científica y perseverancia en la búsqueda del conocimiento.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maria-goeppert-mayer.jpg",
-    "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1972",
-      "birthPlace": "Kattowitz, Alemania",
-      "mainField": "Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.wsemexhibit.org/maria-goeppert-mayer.html"
+    id: '17',
+    name: 'Brilliance of the Seas',
+    shortDescription: 'Vive momentos brillantes en Brilliance of the Seas, un crucero que ofrece comodidades excepcionales y destinos emocionantes en Europa y el Mediterráneo.',
+    description: 'Brilliance of the Seas, de Royal Caribbean Group, es un crucero que te invita a vivir momentos brillantes. Construido en 2002, este magnífico barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como Barcelona, Villefranche, La Spezia, Civitavecchia y Ajaccio, Brilliance of the Seas te llevará a lugares fascinantes en Europa y el Mediterráneo. Disfruta de una salida desde Barcelona en un viaje de 12 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,000, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '2002',
+      size: '293m',
+      mainField: 'Clase Radiance',
+      itinerary: ['Barcelona', 'Villefranche', 'La Spezia', 'Civitavecchia', 'Ajaccio'],
+      departurePort: 'Barcelona',
+      destination: 'Europa y el Mediterráneo',
+      durationInDays: 12,
+      price: '$2,000',
+      cruiseDates: ['2025-09-01', '2025-09-13', '2025-09-25'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "lise-meitner",
-    "name": "Lise Meitner",
-    "shortDescription": "Física nuclear, contribuyó a la teoría de la fisión nuclear.",
-    "description": "Física austriaca-sueca, dejó un legado imborrable en la física nuclear y la radioquímica. A pesar de enfrentar obstáculos de género en una era dominada por hombres, colaboró con Otto Hahn en el descubrimiento de la fisión nuclear, un avance revolucionario. Aunque no compartió el Premio Nobel por este logro, su contribución fue crucial para comprender la energía nuclear y la física de partículas. Su determinación y pasión por la ciencia han inspirado a generaciones de científicas. Lise Meitner es un símbolo perdurable de la perseverancia femenina y el impacto duradero que las mujeres pueden tener en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/lise-meitner.jpg",
-    "facts": {
-      "yearOfBirth": "1878",
-      "yearOfDeath": "1968",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/lise-meitner-in-nuclear-physics-lab-in-19502c-retro/651196e6bbcb4009950e9955c2199760"
+    id: '18',
+    name: 'Jewel of the Seas',
+    shortDescription: 'Explora la joya del mar en Jewel of the Seas, un crucero que ofrece lujo y entretenimiento en itinerarios emocionantes por el Caribe y América del Sur.',
+    description: 'Jewel of the Seas, de Royal Caribbean Group, es un crucero que te invita a explorar la joya del mar. Construido en 2004, este majestuoso barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como San Juan, St. Thomas, Bridgetown, Castries y Oranjestad, Jewel of the Seas te llevará a lugares fascinantes en el Caribe y América del Sur. Disfruta de una salida desde San Juan en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '2004',
+      size: '293m',
+      mainField: 'Clase Radiance',
+      itinerary: ['San Juan', 'St. Thomas', 'Bridgetown', 'Castries', 'Oranjestad'],
+      departurePort: 'San Juan',
+      destination: 'Caribe y América del Sur',
+      durationInDays: 10,
+      price: '$1,800',
+      cruiseDates: ['2025-10-01', '2025-10-11', '2025-10-21'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "sau-lan-wu",
-    "name": "Sau Lan Wu",
-    "shortDescription": "Física de partículas, contribuyó a experimentos clave en física de alta energía.",
-    "description": "Física experimental sinoamericana, ha sido una fuerza motriz en la física de partículas. Destacó en experimentos en el CERN y lideró investigaciones cruciales, como el descubrimiento del quark c, que expandieron nuestro entendimiento de la estructura fundamental de la materia. Wu superó desafíos en una disciplina dominada por hombres y ha sido un faro de inspiración para científicas de todo el mundo. Sau Lan Wu es un ejemplo de excelencia científica y de cómo las mujeres pueden dejar huella en la investigación de vanguardia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sau-lan-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1940",
-      "birthPlace": "Hong Kong, China",
-      "mainField": "Física de Partículas"
-    },
-    "extraInfo": {
-      "imageSource": "https://repository.aip.org/islandora/object/nbla%3A315195"
+    id: '19',
+    name: 'Spectrum of the Seas',
+    shortDescription: 'Explora el espectro de emociones en Spectrum of the Seas. Este crucero te llevará a destinos fascinantes con comodidades de primera clase.',
+    description: 'Spectrum of the Seas, de Royal Caribbean Group, es un crucero que promete una experiencia única. Construido en 2019, este magnífico barco de 347 metros de eslora pertenece a la Clase Quantum Ultra. Con itinerarios que incluyen destinos como Shanghái, Nagasaki, Okinawa y Hong Kong, Spectrum of the Seas te llevará a lugares fascinantes en Asia. Disfruta de una salida desde Shanghái en un viaje de 9 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,300, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '2019',
+      size: '347m',
+      mainField: 'Clase Quantum Ultra',
+      itinerary: ['Shanghái', 'Nagasaki', 'Okinawa', 'Hong Kong'],
+      departurePort: 'Shanghái',
+      destination: 'Asia',
+      durationInDays: 9,
+      price: '$2,300',
+      cruiseDates: ['2026-01-01', '2026-01-10', '2026-01-20'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "jocelyn-bell-burnell",
-    "name": "Jocelyn Bell Burnell",
-    "shortDescription": "Astrónoma y astrofísica, co-descubridora de los púlsares.",
-    "description": "Astrofísica británica, es una figura extraordinaria en la ciencia. Durante su doctorado, hizo un descubrimiento revolucionario al detectar los primeros púlsares, estrellas de neutrones altamente magnetizadas que emiten pulsos regulares de radiación. A pesar de que su asesor recibió el Premio Nobel por este descubrimiento, Bell Burnell se ha convertido en un símbolo de perseverancia y contribución de las mujeres a la astronomía. Su carrera distinguida y su activismo en favor de la diversidad de género en la ciencia han inspirado a generaciones futuras de científicas. Jocelyn Bell Burnell es un ejemplo de valentía y excelencia científica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/jocelyn-bell-burnell.jpg",
-    "facts": {
-      "yearOfBirth": "1943",
-      "birthPlace": "Belfast, Reino Unido",
-      "mainField": "Astronomía, Astrofísica"
-    },
-    "extraInfo": {
-      "imageSource": "https://womeninscienceweadmire.icfo.eu/wiswa-2/jocelyn-bell/"
+    id: '20',
+    name: 'Serenade of the Seas',
+    shortDescription: 'Descubre la serenidad en Serenade of the Seas, un crucero que ofrece lujo y entretenimiento en itinerarios emocionantes por Europa y el Caribe.',
+    description: 'Serenade of the Seas, de Royal Caribbean Group, es un crucero que te invita a descubrir la serenidad. Construido en 2003, este espléndido barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como Barcelona, Villefranche, Roma y Santorini, Serenade of the Seas te llevará a lugares fascinantes en Europa y el Caribe. Disfruta de una salida desde Barcelona en un viaje de 12 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,100, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '2003',
+      size: '293m',
+      mainField: 'Clase Radiance',
+      itinerary: ['Barcelona', 'Villefranche', 'Roma', 'Santorini'],
+      departurePort: 'Barcelona',
+      destination: 'Europa y el Caribe',
+      durationInDays: 12,
+      price: '$2,100',
+      cruiseDates: ['2026-02-01', '2026-02-13', '2026-02-25'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "dorothy-crowfoot-hodgkin",
-    "name": "Dorothy Crowfoot Hodgkin",
-    "shortDescription": "Química, ganadora del Premio Nobel de Química.",
-    "description": "Química británica, es una figura icónica en la ciencia que superó las barreras de género de su época. Su trabajo revolucionario en la cristalografía de rayos X permitió determinar la estructura de importantes biomoléculas, como la penicilina, la vitamina B12 y la insulina. Fue galardonada con el Premio Nobel de Química en 1964, siendo la tercera mujer en recibir este prestigioso reconocimiento. Hodgkin no solo fue una científica excepcional, sino también una defensora de la igualdad de género en la ciencia, allanando el camino para futuras generaciones de científicas y dejando un legado duradero en la investigación y la equidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/dorothy-crowfoot-hodgkin.jpg",
-    "facts": {
-      "yearOfBirth": "1910",
-      "yearOfDeath": "1994",
-      "birthPlace": "El Cairo, Egipto / Shipston-on-Stour, Reino Unido",
-      "mainField": "Química"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.some.ox.ac.uk/news/jan-royall-why-we-must-champion-dorothy-hodgkin-for-the-50-note/"
+    id: '21',
+    name: 'Vision of the Seas',
+    shortDescription: 'Vive la visión en Vision of the Seas, un crucero que combina destinos emocionantes con comodidades de primera clase.',
+    description: 'Vision of the Seas, de Royal Caribbean Group, es un crucero que te llevará a vivir una visión única. Construido en 1998, este impresionante barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Miami, Nassau, Labadee y San Juan, Vision of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,400, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '1998',
+      size: '279m',
+      mainField: 'Clase Vision',
+      itinerary: ['Miami', 'Nassau', 'Labadee', 'Día en el mar', 'San Juan'],
+      departurePort: 'Miami',
+      destination: 'Caribe',
+      durationInDays: 7,
+      price: '$1,400',
+      cruiseDates: ['2026-03-01', '2026-03-08', '2026-03-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "marie-curie",
-    "name": "Marie Curie",
-    "shortDescription": "Física y química, ganadora de dos Premios Nobel.",
-    "description": "física y química de origen polaco y nacionalizada francesa, es una de las figuras más icónicas en la historia de la ciencia. Ganadora de dos premios Nobel (Física en 1903 y Química en 1911), Curie realizó investigaciones fundamentales sobre la radiactividad y el descubrimiento de los elementos radio y polonio. Su dedicación y valentía en la investigación científica, a pesar de los desafíos de la discriminación de género y los riesgos de la radiación, la convierten en un modelo a seguir para científicas de todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marie-curie.jpg",
-    "facts": {
-      "yearOfBirth": "1867",
-      "yearOfDeath": "1934",
-      "birthPlace": "Varsovia, Polonia",
-      "mainField": "Física y Química"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.historyextra.com/period/first-world-war/life-of-the-week-marie-curie/"
+    id: '22',
+    name: 'Rhapsody of the Seas',
+    shortDescription: 'Vive la armonía en Rhapsody of the Seas, un crucero que ofrece comodidades excepcionales y destinos emocionantes en el Mediterráneo y Europa.',
+    description: 'Rhapsody of the Seas, de Royal Caribbean Group, es un crucero que te invita a vivir la armonía. Construido en 1997, este magnífico barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Venecia, Dubrovnik, Santorini y Atenas, Rhapsody of the Seas te llevará a lugares fascinantes en el Mediterráneo y Europa. Disfruta de una salida desde Venecia en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,600, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '1997',
+      size: '279m',
+      mainField: 'Clase Vision',
+      itinerary: ['Venecia', 'Día en el mar', 'Dubrovnik', 'Santorini', 'Atenas'],
+      departurePort: 'Venecia',
+      destination: 'Mediterráneo y Europa',
+      durationInDays: 10,
+      price: '$1,600',
+      cruiseDates: ['2026-04-01', '2026-04-11', '2026-04-21'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "marjory-stephenson",
-    "name": "Marjory Stephenson",
-    "shortDescription": "Microbióloga y bioquímica, investigó en enzimología.",
-    "description": "Bioquímica británica, brilló como científica en una época en la que las mujeres enfrentaban obstáculos muy significativos en la investigación científica. Su trabajo pionero en microbiología, enzimología y bioquímica contribuyó al entendimiento de procesos fundamentales en la vida. Fue una de las primeras mujeres en ser elegida miembro de la Royal Society, un reconocimiento a su destacada contribución a la ciencia. Además, fue una mentora y defensora de las mujeres en la ciencia, inspirando y allanando el camino para futuras generaciones.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjory-stephenson.jpg",
-    "facts": {
-      "yearOfBirth": "1885",
-      "yearOfDeath": "1948",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Microbiología, Bioquímica"
-    },
-    "extraInfo": {
-      "imageSource": "https://microbiologysociety.org/grants-prizes/all-prizes-and-competitions-/prize-lectures/marjory-stephenson-prize-lecture/marjory-stephenson-a-short-history.html"
+    id: '23',
+    name: 'Grandeur of the Seas',
+    shortDescription: 'Descubre la grandeza en Grandeur of the Seas, un crucero que ofrece lujo y entretenimiento en itinerarios emocionantes por el Caribe y América del Norte.',
+    description: 'Grandeur of the Seas, de Royal Caribbean Group, es un crucero que te invita a descubrir la grandeza. Construido en 1996, este espléndido barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Baltimore, Charleston, Miami y Nassau, Grandeur of the Seas te llevará a lugares fascinantes en el Caribe y América del Norte. Disfruta de una salida desde Baltimore en un viaje de 9 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,750, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '1996',
+      size: '279m',
+      mainField: 'Clase Vision',
+      itinerary: ['Baltimore', 'Día en el mar', 'Charleston', 'Miami', 'Nassau'],
+      departurePort: 'Baltimore',
+      destination: 'Caribe y América del Norte',
+      durationInDays: 9,
+      price: '$1,750',
+      cruiseDates: ['2026-05-01', '2026-05-10', '2026-05-20'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
   },
   {
-    "id": "rosalind-franklin",
-    "name": "Rosalind Franklin",
-    "shortDescription": "Química y cristalógrafa, contribuyó a la comprensión de la estructura del ADN.",
-    "description": "Química y cristalógrafa británica, destacó en un campo dominado por hombres y su contribución a la ciencia es innegable. Sus investigaciones pioneras en la cristalografía de rayos X fueron fundamentales para revelar la estructura del ADN en forma de doble hélice, un hito crucial en la biología molecular. A pesar de que su trabajo inicial fue subestimado, su determinación y habilidad científica allanaron el camino para futuros avances en genética y biología. Franklin es un ejemplo inspirador de cómo las mujeres pueden sobresalir en la ciencia, dejando un legado duradero en la investigación y la igualdad de género.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/rosalind-franklin.jpg",
-    "facts": {
-      "yearOfBirth": "1920",
-      "yearOfDeath": "1958",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Cristalografía"
-    },
-    "extraInfo": {
-      "imageSource": ""
+    id: '24',
+    name: 'Enchantment of the Seas',
+    shortDescription: 'Explora la magia en Enchantment of the Seas, un crucero que ofrece comodidades excepcionales y destinos emocionantes en el Caribe y América del Sur.',
+    description: 'Enchantment of the Seas, de Royal Caribbean Group, es un crucero que te invita a explorar la magia. Construido en 1997, este majestuoso barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Galveston, Key West, Cozumel y Puerto Costa Maya, Enchantment of the Seas te llevará a lugares fascinantes en el Caribe y América del Sur. Disfruta de una salida desde Galveston en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,500, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
+    imageUrl: 'URL_GENERADA_POR_IA',
+    facts: {
+      yearOfBuild: '1997',
+      size: '279m',
+      mainField: 'Clase Vision',
+      itinerary: ['Galveston', 'Key West', 'Día en el mar', 'Cozumel', 'Puerto Costa Maya'],
+      departurePort: 'Galveston',
+      destination: 'Caribe y América del Sur',
+      durationInDays: 7,
+      price: '$1,500',
+      cruiseDates: ['2026-06-01', '2026-06-08', '2026-06-15'],
+      amenities: ['Piscinas', 'Restaurantes gourmet', 'Teatro en vivo', 'Spa']
     }
-  }
+  },
+        
 ];
