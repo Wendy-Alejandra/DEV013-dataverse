@@ -181,7 +181,7 @@ const data = [
     name: 'Explorer of the Seas',
     shortDescription: 'Ofrece una experiencia excepcional en cruceros. Descubre el lujo y la diversión mientras exploras destinos emocionantes en el Caribe.',
     description: 'Explorer of the Seas, de Royal Caribbean Group, es un crucero que redefine el concepto de unas vacaciones de lujo. Construido en 2000, este impresionante barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como San Juan, St. Thomas, St. Maarten y Antigua, Explorer of the Seas te llevará a lugares fascinantes en el Caribe. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,500, este crucero ofrece comodidades de primer nivel.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/explorerOfTheSeasMiami.jpeg',
     facts: {
       shipSize: 311,
       shipClass: 'Clase Voyager',
@@ -213,7 +213,7 @@ const data = [
     name: 'Mariner of the Seas',
     shortDescription: 'Explora la grandeza en un crucero que ofrece diversión en itinerarios emocionantes por el Caribe.',
     description: 'Mariner of the Seas, de Royal Caribbean Group, es un crucero que te invita a explorar la grandeza. Construido en 2003, este majestuoso barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como Nassau, CocoCay, Cozumel y Roatán, Mariner of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Port Canaveral en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,550, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/marinerOfTheSeasCaribe.jpeg',
     facts: {
       shipSize: 311,
       shipClass: 'Clase Voyager',
@@ -229,7 +229,7 @@ const data = [
     name: 'Voyager of the Seas',
     shortDescription: 'Vive la aventura en Voyager of the Seas, un crucero que combina emocionantes destinos con comodidades de primera clase.',
     description: 'Voyager of the Seas, de Royal Caribbean Group, es un crucero que te llevará a vivir una aventura única. Construido en 1999, este impresionante barco de 311 metros de eslora pertenece a la Clase Voyager. Con itinerarios que incluyen destinos como Sydney, Nouméa, Lifou y Mare, Voyager of the Seas te llevará a lugares fascinantes en Australia y el Pacífico. Disfruta de una salida desde Sydney en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/voyayerOfTheSeasSydney.jpeg',
     facts: {
       shipSize: 311,
       shipClass: 'Clase Voyager',
@@ -245,7 +245,7 @@ const data = [
     name: 'Radiance of the Seas',
     shortDescription: 'Descubre la belleza en un crucero que ofrece lujo y entretenimiento en itinerarios emocionantes por Alaska y el Pacífico.',
     description: 'Radiance of the Seas, de Royal Caribbean Group, es un crucero que te invita a descubrir la belleza. Construido en 2001, este espléndido barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como Seward, Juneau, Skagway y Victoria, Radiance of the Seas te llevará a lugares fascinantes en Alaska y el Pacífico. Disfruta de una salida desde Vancouver en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,700, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/redianceOfTheSeasCanada.jpeg',
     facts: {
       shipSize: 293,
       shipClass: 'Clase Radiance',
@@ -261,7 +261,7 @@ const data = [
     name: 'Brilliance of the Seas',
     shortDescription: 'Vive momentos brillantes en un crucero que ofrece comodidades excepcionales y destinos emocionantes en Europa y el Mediterráneo.',
     description: 'Brilliance of the Seas, de Royal Caribbean Group, es un crucero que te invita a vivir momentos brillantes. Construido en 2002, este magnífico barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como Barcelona, Villefranche, La Spezia, Civitavecchia y Ajaccio, Brilliance of the Seas te llevará a lugares fascinantes en Europa y el Mediterráneo. Disfruta de una salida desde Barcelona en un viaje de 12 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,000, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/billianceOfTheSeasBarcelona.jpeg',
     facts: {
       shipSize: 293,
       shipClass: 'Clase Radiance',
@@ -277,7 +277,7 @@ const data = [
     name: 'Jewel of the Seas',
     shortDescription: 'Explora la joya del mar en crucero que ofrece entretenimiento en itinerarios emocionantes por el Caribe y América del Sur.',
     description: 'Es un crucero que te invita a explorar la joya del mar. Construido en 2004, este majestuoso barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como San Juan, St. Thomas, Bridgetown, Castries y Oranjestad, Jewel of the Seas te llevará a lugares fascinantes en el Caribe y América del Sur. Disfruta de una salida desde San Juan en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/jewelOfTheSeasCaribe.jpeg',
     facts: {
       shipSize: 293,
       shipClass: 'Clase Radiance',
@@ -293,7 +293,7 @@ const data = [
     name: 'Spectrum of the Seas',
     shortDescription: 'Explora el espectro de emociones en este crucero te llevará a destinos fascinantes con comodidades de primera clase.',
     description: 'Spectrum of the Seas, de Royal Caribbean Group, es un crucero que promete una experiencia única. Construido en 2019, este magnífico barco de 347 metros de eslora pertenece a la Clase Quantum Ultra. Con itinerarios que incluyen destinos como Shanghái, Nagasaki, Okinawa y Hong Kong, Spectrum of the Seas te llevará a lugares fascinantes en Asia. Disfruta de una salida desde Shanghái en un viaje de 9 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,300, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/spectrumOfTheSeasAsia.jpeg',
     facts: {
       shipSize: 347,
       shipClass: 'Clase Quantum Ultra',
@@ -309,7 +309,7 @@ const data = [
     name: 'Serenade of the Seas',
     shortDescription: 'Descubre la serenidad un crucero que ofrece lujo y entretenimiento en itinerarios emocionantes por Europa y el Caribe.',
     description: 'Serenade of the Seas, de Royal Caribbean Group, es un crucero que te invita a descubrir la serenidad. Construido en 2003, este espléndido barco de 293 metros de eslora pertenece a la Clase Radiance. Con itinerarios que incluyen destinos como Barcelona, Villefranche, Roma y Santorini, Serenade of the Seas te llevará a lugares fascinantes en Europa y el Caribe. Disfruta de una salida desde Barcelona en un viaje de 12 días lleno de lujo y entretenimiento. Con un precio atractivo de $2,100, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/serenadeOfTheSeasEurope.jpeg',
     facts: {
       shipSize: 293,
       shipClass: 'Clase Radiance',
@@ -325,7 +325,7 @@ const data = [
     name: 'Vision of the Seas',
     shortDescription: 'Vive la visión en Vision of the Seas, un crucero que combina destinos emocionantes con comodidades de primera clase.',
     description: 'Vision of the Seas, de Royal Caribbean Group, es un crucero que te llevará a vivir una visión única. Construido en 1998, este impresionante barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Miami, Nassau, Labadee y San Juan, Vision of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,400, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/visionOfTheSeasCaribe.jpeg',
     facts: {
       shipSize: 279,
       shipClass: 'Clase Vision',
@@ -341,7 +341,7 @@ const data = [
     name: 'Rhapsody of the Seas',
     shortDescription: 'Vive la armonía en un crucero que ofrece comodidades excepcionales y destinos emocionantes en el Mediterráneo y Europa.',
     description: 'Rhapsody of the Seas, de Royal Caribbean Group, es un crucero que te invita a vivir la armonía. Construido en 1997, este magnífico barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Venecia, Dubrovnik, Santorini y Atenas, Rhapsody of the Seas te llevará a lugares fascinantes en el Mediterráneo y Europa. Disfruta de una salida desde Venecia en un viaje de 10 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,600, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/rhapsodyOfTheSeasEurope.jpeg',
     facts: {
       shipSize: 279,
       shipClass: 'Clase Vision',
@@ -357,7 +357,7 @@ const data = [
     name: 'Grandeur of the Seas',
     shortDescription: 'Descubre la grandeza en Grandeur of the Seas, ofrece entretenimiento en itinerarios emocionantes por el Caribe y América del Norte.',
     description: 'Grandeur of the Seas, de Royal Caribbean Group, es un crucero que te invita a descubrir la grandeza. Construido en 1996, este espléndido barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Baltimore, Charleston, Miami y Nassau, Grandeur of the Seas te llevará a lugares fascinantes en el Caribe y América del Norte. Disfruta de una salida desde Baltimore en un viaje de 9 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,750, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/grandeurOfTheSeasBaltimore.jpeg',
     facts: {
       shipSize: 279,
       shipClass: 'Clase Vision',
@@ -373,7 +373,7 @@ const data = [
     name: 'Enchantment of the Seas',
     shortDescription: 'Explora la magia un crucero que ofrece comodidades excepcionales y destinos emocionantes en el Caribe y América del Sur.',
     description: 'Enchantment of the Seas, de Royal Caribbean Group, es un crucero que te invita a explorar la magia. Construido en 1997, este majestuoso barco de 279 metros de eslora pertenece a la Clase Vision. Con itinerarios que incluyen destinos como Galveston, Key West, Cozumel y Puerto Costa Maya, Enchantment of the Seas te llevará a lugares fascinantes en el Caribe y América del Sur. Disfruta de una salida desde Galveston en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,500, ofrece comodidades de primer nivel.',
-    imageUrl: 'https://github.com/Mcarrobof24/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/enchantmentOfTheSeasKeyWest.jpeg',
     facts: {
       shipSize: 279,
       shipClass: 'Clase Vision',
