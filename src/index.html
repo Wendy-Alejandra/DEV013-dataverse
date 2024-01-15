@@ -2,10 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js" type="module"></script>
   </head>
   <body>
-    <script src="main.js" type="module"></script>
+    <header>
+      <h1>Cruises Line</h1>
+    </header>
+    <main>
+      <h2>Cruise Vacation</h2>
+      <label for="">Filter by:</label>
+      <select data-testid="select-filter" name="price">
+        <option disable selected>Price</option>
+        <option value="1000-1500">Price $1000-$1500</option>
+        <option value="1501-2000">Price $1500-$2000</option>
+        <option value="2001-2500">Price $2000-$2500</option>
+        <option value="2501-3000">Price $2500-$3000</option>
+      </select>
+      <label for="">Sort by:</label>
+      <select data-testid="select-sort" name="name">
+        <option disable selected>Ship Name</option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+      <button data-testid="button-clear">Clear</button>
+      <div id="root">
+        <ul>
+
+        </ul>
+      </div>
+    </main>
+    <footer>
+      By: Camila Arrobo y Wendy Chirinos DEV013 Laboratoria 2024
+    </footer>
+
   </body>
 </html>
