@@ -1,19 +1,34 @@
 
 export const renderItems = (data) => {
-  // console.log(data)
+
   // Aquí comienza tu código y puedes retornar lo que tu necesites
 
-  const cruceros = document.querySelector('ul');
-  data.forEach(data => {
-    // console.log(data);
-    const li = document.createElement('li');
-    // const cruisePrice = document.createElement('p');
-    li.innerHTML = `${data.name} ${data.facts.departurePort}`;
-    cruceros.appendChild(li);
-    // cruisePrice.innerHTML = `${data.facts.cruisePrice}`;
-  });
-  
-  return data;
+  const contenedorCruceros = document.createElement('ul');
+  data.forEach(crucero => {
+    const image = document.createElement('img');
+    const liName = document.createElement('li');
+    const ddPort = document.createElement('dd');
+    const ddPrice = document.createElement('dd');
+    const ddDescription = document.createElement('dd');
+
+    
+    image.setAttribute('itemprop', 'image');
+    image.setAttribute('src', `${crucero.imageUrl}`);
+    liName.setAttribute('itemscope', '');
+    liName.setAttribute('itemtype', 'name');
+    ddPort.setAttribute('itemprop', 'departureBoatTerminal');
+    ddPrice.setAttribute('itemprop', 'totalPrice');
+    ddDescription.setAttribute('itemprop', 'description');
+    liName.innerHTML = `${crucero.name}`;
+    ddPort.innerHTML = `${crucero.facts.departurePort}`;
+    ddPrice.innerHTML = `${crucero.facts.cruisePrice}`;
+    ddDescription.innerHTML = `AVG PER PERSON`;
+    // ul.setAttribute('itemscope=')
+    liName.append(ddPort, ddPrice, ddDescription);
+    contenedorCruceros.append(image, liName); /*esto va en main.js*/
+
+  });  
+  return contenedorCruceros;
 };
 
 
