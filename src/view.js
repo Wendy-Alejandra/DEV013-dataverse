@@ -1,19 +1,30 @@
 
 export const renderItems = (data) => {
-  // console.log(data)
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
+  //console.log(data);
 
-  const cruceros = document.querySelector('ul');
-  data.forEach(data => {
-    // console.log(data);
-    const li = document.createElement('li');
-    // const cruisePrice = document.createElement('p');
-    li.innerHTML = `${data.name} ${data.facts.departurePort}`;
-    cruceros.appendChild(li);
-    // cruisePrice.innerHTML = `${data.facts.cruisePrice}`;
+  const cruiserContainer = document.createElement('ul');
+  data.forEach(crucero => {
+    
+    const liName= document.createElement('li');
+    const dlList= document.createElement('dl');
+    const ddPort= document.createElement('dd');
+    const ddPrice= document.createElement('dd');
+    const ddComent= document.createElement('dd');
+
+    liName.innerHTML = `${crucero.name}`;
+    dlList.innerHTML = ``;
+    ddPort.innerHTML = `${crucero.facts.departurePort}`;
+    ddPrice.innerHTML = `${crucero.facts.cruisePrice}`;
+    ddComent.innerHTML = `AVG PER PERSON`;
+
+    liName.append(dlList, ddPort, ddPrice, ddComent)
+    cruiserContainer.appendChild(liName);
+    
+
   });
+
   
-  return data;
+  return cruiserContainer;
 };
 
 
