@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    font-family:var(--fuente);        
+}
+:root{
+    --blanco: #ffffff;
+    --azul: #3fa2cc;
+    --negro: #333333;
+    --naranja: #D9AB37;
+    --amarillo: #e2dd82;
+    --fuente: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: url(fondo_cruceros.jpg);
+}
+#main-container{
+    background-color: var(--azul);
+    margin: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+h1{
+    color: var(--blanco);
+    font-size: 35px;
+    
+}
+.cards{
+    
+    align-items: center;
+    list-style-type: none;
+    background-color: var(--blanco);
+    margin: 30px;
+    padding: 15px;
+    
+}
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 20vw;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
