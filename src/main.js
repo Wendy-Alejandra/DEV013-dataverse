@@ -3,7 +3,10 @@ import { renderItems } from './view.js';
 
 
 import data from './data/dataset.js';
-const container = document.querySelector("#root");
-container.appendChild(renderItems(data));
+// Lamando a rrot de html
+const contenedor = document.querySelector("#root");
+// renderItems(data);
+contenedor.appendChild(renderItems(data));
+
 
 console.log(example, renderItems(data), data);
