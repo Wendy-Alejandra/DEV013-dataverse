@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
 *{
     box-sizing: border-box;
     font-family:var(--fuente);        
@@ -14,36 +18,122 @@
 body{
     margin: 0;
     background: url(fondo_cruceros.jpg);
+    background-size: cover;
 }
 #main-container{
     background-color: var(--azul);
-    margin: 30px;
-    padding-top: 5px;
+    border-radius: 20px;
+    margin: 60px 60px;
+    padding: 10px 10px ;
+    text-align: center;
+    list-style-type: none;
+}
+header{
     text-align: center;
 }
 h1{
     color: var(--blanco);
     font-size: 35px;
-    
+}
+#menu{
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 6px;
+    background-color: var(--blanco);
+    border: 2px solid var(--blanco);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+label{
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+select{
+    appearance: none;
+    cursor: pointer;
+    outline: 0; 
+    background-color: #D6D9DC;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border: 1px solid #A4A6A9;
+    border-radius: 5px;
+    font-family: var(--fuente);
+    font-size: 15px;
+    width: 160px;
+}
+button{
+    background-color: #D6D9DC;
+    border: 1px solid #A4A6A9;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 30px;
+    font-family: var(--fuente);
+    font-size: 18px;
+    font-weight: 600;
+    width: 160px;
+    cursor: pointer;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .cards{
     
     align-items: center;
     list-style-type: none;
     background-color: var(--blanco);
+    border-radius: 15px ;
     margin: 30px;
     padding: 15px;
     
 }
-#root{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 img{
     height: 20vw;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     border-radius: 10px;
+}
+dl{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+dd{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+dd[itemprop="totalPrice"]{
+    font-size: 22px;
+    font-weight: 700;
+    background-color: var(--naranja);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 70px;
+}
+dd[itemprop="departureBoatTerminal"]{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+}
+footer{
+    color: var(--blanco);
+    font-size: 25px;
+    font-style: italic;
+    margin: 5px;
+    padding-bottom: 3px;
 }
 
