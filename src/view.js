@@ -3,10 +3,9 @@ export const renderItems = (data) => {
 
   // Aquí comienza tu código y puedes retornar lo que tu necesites
 
-  const contenedorCruceros = document.createElement('ul');
-  data.forEach(crucero => {
+  const ul = document.createElement('ul');
+  data.forEach(html => {
     const li = document.createElement('li');
-
     const image = document.createElement('img');
     const dlName = document.createElement('dl');
     const ddPort = document.createElement('dd');
@@ -15,7 +14,7 @@ export const renderItems = (data) => {
 
     
     image.setAttribute('itemprop', 'image');
-    image.setAttribute('src', `${crucero.imageUrl}`);
+    image.setAttribute('src', `${html.imageUrl}`);
     li.setAttribute('itemscope', '');
     li.setAttribute('itemtype', 'name');
     li.setAttribute('class', 'cards');
@@ -24,16 +23,16 @@ export const renderItems = (data) => {
     ddPrice.setAttribute('itemprop', 'totalPrice');
     ddDescription.setAttribute('itemprop', 'description');
 
-    dlName.innerHTML = `${crucero.name}`;
-    ddPort.innerHTML = `Departure Port: ${crucero.facts.departurePort}`;
-    ddPrice.innerHTML = `$${crucero.facts.cruisePrice}`;
+    dlName.innerHTML = `${html.name}`;
+    ddPort.innerHTML = `Departure Port: ${html.facts.departurePort}`;
+    ddPrice.innerHTML = `$${html.facts.cruisePrice}`;
     ddDescription.innerHTML = `AVG PER PERSON`;
  
     li.append(image, dlName, ddPort, ddPrice, ddDescription);
-    contenedorCruceros.append(li); /*esto va en main.js*/
+    ul.append(li); /*esto va en main.js*/
 
   });  
-  return contenedorCruceros;
+  return ul;
 };
 
 
