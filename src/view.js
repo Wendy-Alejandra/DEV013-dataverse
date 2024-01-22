@@ -25,7 +25,7 @@ export const renderItems = (data) => {
 
     dlName.innerHTML = `${card.name}`;
     ddPort.innerHTML = `Departure Port: ${card.facts.departurePort}`;
-    ddPrice.innerHTML = `${card.facts.cruisePrice}`;
+    ddPrice.innerHTML = `$${card.facts.cruisePrice}`;
     ddDescription.innerHTML = `AVG PER PERSON`;
  
     li.append(image, dlName, ddPort, ddPrice, ddDescription);
