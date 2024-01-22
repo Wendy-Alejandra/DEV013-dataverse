@@ -29,7 +29,7 @@ export const renderItems = (data) => {
     ddDescription.innerHTML = `AVG PER PERSON`;
  
     li.append(image, dlName, ddPort, ddPrice, ddDescription);
-    ul.append(li); /*esto va en main.js*/
+    ul.append(li); 
 
   });  
   return ul;
