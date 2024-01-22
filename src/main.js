@@ -1,4 +1,4 @@
-
+import { filterData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 
@@ -10,11 +10,13 @@ const contenedor = document.querySelector("#root");
 contenedor.appendChild(renderItems(data));
 
 
-const selectSort= document.querySelector('select[data-testid="select-sort"]');
+const selectFilter = document.querySelector('select[data-testid="select-filter"]');
+const optionValue = document.querySelector('option[value]')
+selectFilter.addEventListener('change', function() {
+  const filteredData = filterData(data, 'cruisePrice', 'Price $1000-$1500');
+  console.log(filterData(data, 'cruisePrice', 'Price $1000-$1500'));
+  contenedor.innerHTML = '';
+  contenedor.appendChild(renderItems(filteredData));
+})
 
-selectSort.addEventListener('change',function(e){
-    contenedor.innerHTML = '';
-    contenedor.appendChild(renderItems(sortData(data, 'name', 'asc')));
-    console.log(data);
-
-});
+console.log(filterData, renderItems(data), data);
