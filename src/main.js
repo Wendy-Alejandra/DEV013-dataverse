@@ -9,17 +9,27 @@ contenedor.appendChild(renderItems(data));
 
 
 const selectFilter = document.querySelector('select[data-testid="select-filter"]');
-const optionValue = document.querySelector('option[value]')
-selectFilter.addEventListener('change', function() {
-  const filteredData = filterData(data, 'cruisePrice', 'Price $1000-$1500');
-  console.log(filterData(data, 'cruisePrice', 'Price $1000-$1500'));
+
+selectFilter.addEventListener('change', function(e) {
+  const filteredData = filterData(data, 'cruisePrice', e.target.value);
   contenedor.innerHTML = '';
   contenedor.appendChild(renderItems(filteredData));
+  selectSort.addEventListener('change', function(e){
+    const orderFilter = sortData(filteredData, 'name', e.target.value);
+    contenedor.innerHTML='';
+    contenedor.appendChild(renderItems(orderFilter));
+  })
 });
 
 const selectSort = document.querySelector('select[data-testid="select-sort"]');
-selectSort.addEventListener('change', function(){
+selectSort.addEventListener('change', function(e){
+  const orderData= sortData(data, 'name', e.target.value);
   contenedor.innerHTML= '';
-  contenedor.appendChild(renderItems(sortData(data, 'name', 'asc')));
+  contenedor.appendChild(renderItems(orderData));
 })
 
+const button = document.querySelector('button[data-testid="button-clear"]');
+button.addEventListener('click', function(){
+  contenedor.innerHTML= '';
+  contenedor.appendChild(renderItems(data));
+})

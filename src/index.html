@@ -26,8 +26,14 @@
           <label for="">Sort by:</label>
           <select data-testid="select-sort" name="name">
             <option disable selected>Ship Name</option>
-            <option value="asc">A-Z</option>
-            <option value="desc">Z-A</option>
+              <option value="asc">Name: A-Z</option>
+              <option value="desc">Name: Z-A</option>
+          </select>
+          <label for=""></label>
+          <select data-testid="select-sort-price" name="price-high-low">
+            <option disable selected>Price</option>  
+              <option value="low">Low to High</option>
+              <option value="high">High to Low</option>
           </select>
           <button data-testid="button-clear">Clear</button>
         </div>
