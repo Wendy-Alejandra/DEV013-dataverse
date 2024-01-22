@@ -4,7 +4,7 @@ export const renderItems = (data) => {
   // Aquí comienza tu código y puedes retornar lo que tu necesites
 
   const ul = document.createElement('ul');
-  data.forEach(html => {
+  data.forEach(card => {
     const li = document.createElement('li');
     const image = document.createElement('img');
     const dlName = document.createElement('dl');
@@ -14,7 +14,7 @@ export const renderItems = (data) => {
 
     
     image.setAttribute('itemprop', 'image');
-    image.setAttribute('src', `${html.imageUrl}`);
+    image.setAttribute('src', `${card.imageUrl}`);
     li.setAttribute('itemscope', '');
     li.setAttribute('itemtype', 'name');
     li.setAttribute('class', 'cards');
@@ -23,9 +23,9 @@ export const renderItems = (data) => {
     ddPrice.setAttribute('itemprop', 'totalPrice');
     ddDescription.setAttribute('itemprop', 'description');
 
-    dlName.innerHTML = `${html.name}`;
-    ddPort.innerHTML = `Departure Port: ${html.facts.departurePort}`;
-    ddPrice.innerHTML = `${html.facts.cruisePrice}`;
+    dlName.innerHTML = `${card.name}`;
+    ddPort.innerHTML = `Departure Port: ${card.facts.departurePort}`;
+    ddPrice.innerHTML = `${card.facts.cruisePrice}`;
     ddDescription.innerHTML = `AVG PER PERSON`;
  
     li.append(image, dlName, ddPort, ddPrice, ddDescription);
