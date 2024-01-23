@@ -1,4 +1,4 @@
-import { filterData, sortData, sortDataByPrice } from "./dataFunctions.js";
+import { filterData, sortData, sortDataByPrice, computeStats} from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
@@ -17,11 +17,11 @@ selectFilter.addEventListener("change", function (e) {
     const orderFilterName = sortData(filteredData, "name", e.target.value);
     contenedor.innerHTML = "";
     contenedor.appendChild(renderItems(orderFilterName));
-    selectSortByPrice.addEventListener("change", function (e) {
-      const orderPriceFilter = sortDataByPrice(filteredData, "cruisePrice", e.target.value);
-      contenedor.innerHTML = "";
-      contenedor.appendChild(renderItems(orderPriceFilter));
-    });
+  });
+  selectSortByPrice.addEventListener("change", function (e) {
+    const orderPriceFilter = sortDataByPrice(filteredData, "cruisePrice", e.target.value);
+    contenedor.innerHTML = "";
+    contenedor.appendChild(renderItems(orderPriceFilter));
   });
 });
 
@@ -41,6 +41,17 @@ selectSortByPrice.addEventListener("change", function (e) {
 
 const button = document.querySelector('button[data-testid="button-clear"]');
 button.addEventListener("click", function () {
+  selectSortByPrice.selectedIndex = 0;
+  selectSort.selectedIndex = 0;
+  selectFilter.selectedIndex = 0;
   contenedor.innerHTML = "";
   contenedor.appendChild(renderItems(data));
+ 
 });
+
+const buttonStats = document.querySelector('button[data-testid="statistics"]');
+buttonStats.addEventListener('click', function(){
+  const textStats = document.getElementById('text');
+  textStats.textContent= computeStats(data);
+  
+})

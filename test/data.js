@@ -1,52 +1,63 @@
 // Aqui puedes agregar los datos que necesites para tus pruebas
 // al menos debe tener uno que se llame "data"
 
-export const data = [{
-  "id": "ada-lovelace",
-  "name": "Ada Lovelace",
-  "shortDescription": "Pionera en la programación, primera programadora de la historia.",
-  "description": "Una visionaria matemática británica del siglo XIX, es aclamada como la primera programadora de la historia. Su colaboración con Charles Babbage en la creación de la Máquina Analítica la llevó a desarrollar algoritmos, incluyendo el famoso \"algoritmo de Bernoulli\", destinados a ser procesados por una máquina. Su visión pionera la convirtió en una figura fundamental en la informática y la inteligencia artificial. Lovelace demostró que las computadoras podían ir más allá de simples cálculos matemáticos, anticipando un mundo donde la programación sería esencial en la resolución de problemas complejos, dejando una huella imborrable en la ciencia y la tecnología.",
-  "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/ada-lovelace.jpg",
-  "facts": {
-    "yearOfBirth": "1815",
-    "yearOfDeath": "1852",
-    "birthPlace": "Londres, Reino Unido",
-    "mainField": "Ciencia de la Computación"
+export const data = [
+  {
+    id: "1",
+    name: "Symphony of the Seas",
+    shortDescription:
+      "Descubre la grandeza en Symphony of the Seas, el crucero más grande del mundo. ¡Aventuras emocionantes te esperan!",
+    description:
+      "Symphony of the Seas, parte de la flota de Royal Caribbean Group, es el crucero más grande del mundo. Con un ambiente lujoso y emocionante, ofrece una experiencia única de primer nivel. Explora destinos exóticos, disfruta de deliciosa gastronomía y participa en actividades emocionantes. Con una eslora impresionante, este barco ha sido construido con tecnología de vanguardia. Disfruta de tus vacaciones con comodidades de primera clase y un itinerario que te llevará a lugares inolvidables como Miami, Cococay, Cozumel, Roatán, Puerto Costa Maya.",
+    imageUrl:
+      "https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg?raw=true",
+    facts: {
+      shipSize: 362,
+      shipClass: "Clase Oasis",
+      visitingPorts: "Miami, Cococay, Cozumel, Roatán, Puerto Costa Maya",
+      departurePort: "Miami",
+      durationInDays: 7,
+      cruisePrice: 1500,
+      cruiseDate: "2024-05-01",
+    },
   },
-  "extraInfo": {
-    "imageSource": "https://www.bing.com/images/create/genera-una-imagen-de-ada-lovelace2c-la-primera-prog/650a1eff8ff04b88833d5cdef0309441"
-  }
-},
-{
-  "id": "emmy-noether",
-  "name": "Emmy Noether",
-  "shortDescription": "Matemática destacada, teorema fundamental en álgebra abstracta.",
-  "description": "Una brillante matemática alemana, revolucionó la física teórica con sus contribuciones al teorema de conservación de la energía y el teorema de Noether, fundamentales en la teoría de la relatividad y la mecánica cuántica. A pesar de los obstáculos que enfrentó como mujer en la academia, sus investigaciones en álgebra abstracta y teoría de grupos son fundamentales en la física moderna. Su capacidad para unificar conceptos matemáticos y físicos marcó un hito en la historia de la ciencia, allanando el camino para futuras generaciones de científicas.",
-  "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
-  "facts": {
-    "yearOfBirth": "1882",
-    "yearOfDeath": "1935",
-    "birthPlace": "Erlangen, Alemania",
-    "mainField": "Matemáticas"
+  {
+    id: "2",
+    name: "Harmony of the Seas",
+    shortDescription:
+      "Harmony of the Seas ofrece una experiencia inigualable en cruceros. Descubre el entretenimiento mientras exploras destinos fascinantes en el Caribe.",
+    description:
+      "Harmony of the Seas, de Royal Caribbean Group, es un crucero que redefine la experiencia vacacional. Construido en 2016, este gigante de 362 metros de eslora pertenece a la Clase Oasis. Disfruta de itinerarios emocionantes que incluyen puertos como CocoCay, Nassau, Cozumel y Roatán. La salida se realiza desde Port Canaveral, explorando el Caribe en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,800, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.",
+    imageUrl:
+      "https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/harmonyOfTheSeasCaribe.jpeg?raw=true",
+    facts: {
+      shipSize: 362,
+      shipClass: "Clase Oasis",
+      visitingPorts:
+        "Port Canaveral, CocoCay, Nassau, Cozumel, Roatán, Falmouth",
+      departurePort: "Port Canaveral",
+      durationInDays: 7,
+      cruisePrice: 1800,
+      cruiseDate: "2024-06-01",
+    },
   },
-  "extraInfo": {
-    "imageSource": "https://www.bing.com/images/create/create-an-image-of-of-a-german-woman2c-a-pioneering/6510ddb1e8254b928b8f8f1d5e95fea4"
-  }
-},
-{
-  "id": "hypatia-de-alejandria",
-  "name": "Hypatia de Alejandría",
-  "shortDescription": "Matemática y filósofa en la antigua Alejandría.",
-  "description": "Filósofa y matemática en la antigua Alejandría, desafió las normas de género de su época al destacar en una sociedad dominada por hombres. Su legado incluye importantes contribuciones a la geometría y la astronomía, así como su destacado papel como maestra y defensora del conocimiento en una época de agitación política. Hypatia demostró que las mujeres podían sobresalir en campos intelectuales y su valentía al mantener sus creencias filosóficas la convierte en un símbolo de resistencia y sabiduría en la historia de la ciencia.",
-  "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hypatia-de-alejandria.jpg",
-  "facts": {
-    "yearOfBirth": "circa 360",
-    "yearOfDeath": "415",
-    "birthPlace": "Alejandría, Egipto",
-    "mainField": "Matemáticas, Filosofía"
+  {
+    id: "3",
+    name: "Oasis of the Seas",
+    shortDescription:
+      "Explora el lujo en Oasis of the Seas que ofrece experiencias únicas y emocionantes destinos en todo el mundo.",
+    description:
+      "Oasis of the Seas, de Royal Caribbean Group, es un crucero de Clase Oasis que redefine el significado de unas vacaciones inolvidables. Construido en 2009, este majestuoso barco de 360 metros de eslora combina elegancia con emoción. Con itinerarios que incluyen destinos como Labadee, Falmouth, Cozumel y Roatán, Oasis of the Seas te llevará a lugares fascinantes. Disfruta de una salida desde Miami en un viaje de 7 días lleno de lujo y entretenimiento. Con un precio atractivo de $1,600, este crucero ofrece comodidades de primer nivel, incluyendo piscinas, restaurantes gourmet, teatro en vivo y spa.",
+    imageUrl:
+      "https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/oasisOfTheSeasCaribe.jpeg?raw=true",
+    facts: {
+      shipSize: 360,
+      shipClass: "Clase Oasis",
+      visitingPorts: "Miami, Labadee, Falmouth, Día en el mar, Cozumel, Roatán",
+      departurePort: "Miami",
+      durationInDays: 7,
+      cruisePrice: 1600,
+      cruiseDate: "2024-07-01",
+    },
   },
-  "extraInfo": {
-    "imageSource": "https://www.bing.com/images/create/create-a-vivid-digital-artwork-or-painting-that-de/6510df0ebe1a4807af22175452761e1a"
-  }
-},];
-
+];
