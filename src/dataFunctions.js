@@ -60,3 +60,13 @@ export const sortDataByPrice = (data, sortBy, sortOrder) => {
   return orderDataByPrice;
 };
 
+/*el método reduce accede directamente al array data y lo recorre*/
+export const computeStats = (data) => {
+  const sumPrice = data.reduce((accumulator, currentValue) => accumulator + currentValue.facts.cruisePrice, 0);
+  console.log(sumPrice);
+  const numberOfItems = data.length;
+
+  const avgPrice = sumPrice / numberOfItems ;
+  return `The average price per person per cruise is ${avgPrice}`;
+};
+

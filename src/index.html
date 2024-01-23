@@ -16,26 +16,31 @@
         <h2>Cruise Vacation</h2>
         <div id="menu">
           <label for="">Filter by:</label>
-          <select data-testid="select-filter" name="price">
-            <option disable selected>Price</option>
+          <select data-testid="select-filter" name="price" id="1-select">
+            <option disable selected id="Ship-price">Price</option>
             <option value="1000-1500">Price $1000-$1500</option>
             <option value="1501-2000">Price $1500-$2000</option>
             <option value="2001-2500">Price $2000-$2500</option>
             <option value="2501-3000">Price $2500-$3000</option>
           </select>
-          <label for="">Sort by:</label>
+          <label for="">Order by:</label>
           <select data-testid="select-sort" name="name">
-            <option disable selected>Ship Name</option>
+            <option disable selected value="1">Ship Name</option>
               <option value="asc">Name: A-Z</option>
               <option value="desc">Name: Z-A</option>
           </select>
-          <label for=""></label>
+          <label for="">Sort by:</label>
           <select data-testid="select-sort-price" name="price-high-low">
-            <option disable selected>Price</option>  
+            <option disable selected value="2">Price</option>  
               <option value="low">Low to High</option>
               <option value="high">High to Low</option>
           </select>
           <button data-testid="button-clear">Clear</button>
+          
+        </div>
+        <div id="statistics">
+          <p id="text"></p>
+          <button data-testid="statistics">Statistics</button>
         </div>
 
         <div id="root">
