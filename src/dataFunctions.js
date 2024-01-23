@@ -36,4 +36,27 @@ export const sortData = (data, sortBy, sortOrder) => {
   return orderData;
 };
 
+export const sortDataByPrice = (data, sortBy, sortOrder) => {
+  const orderDataByPrice = data.toSorted((a,b) => {
+    if(sortOrder === 'low'){
+      if(a.facts[sortBy] === b.facts[sortBy]){
+        return 0;
+      }
+      if(a.facts[sortBy]< b.facts[sortBy]){
+        return -1;
+      }
+      return 1;
+    }
+    else {
+      if(a.facts[sortBy] === b.facts[sortBy]){
+        return 0;
+      }
+      if (a.facts[sortBy] > b.facts[sortBy]){
+        return -1;
+      }
+      return 1;
+    }
+  })
+  return orderDataByPrice;
+};
 
