@@ -2,13 +2,18 @@ import { filterData, sortData, sortDataByPrice, computeStats} from "./dataFuncti
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
-// Llamando a root de html
+/* root container rendering*/
 const contenedor = document.querySelector("#root");
-// renderItems(data);
 contenedor.appendChild(renderItems(data));
 
+/* calling attributes through constant declaration */
 const selectFilter = document.querySelector('select[data-testid="select-filter"]');
+const selectSort = document.querySelector('select[data-testid="select-sort"]');
+const selectSortByPrice = document.querySelector('select[data-testid="select-sort-price"]');
+const buttonStats = document.querySelector('button[data-testid="statistics"]');
 
+/* adding event listeners to show on screen*/
+/* filtering and ordering by ship name and cruise price*/
 selectFilter.addEventListener("change", function (e) {
   const filteredData = filterData(data, "cruisePrice", e.target.value);
   contenedor.innerHTML = "";
@@ -25,33 +30,39 @@ selectFilter.addEventListener("change", function (e) {
   });
 });
 
-const selectSort = document.querySelector('select[data-testid="select-sort"]');
+/* ordering by ship name only*/
 selectSort.addEventListener("change", function (e) {
   const orderData = sortData(data, "name", e.target.value);
   contenedor.innerHTML = "";
   contenedor.appendChild(renderItems(orderData));
 });
 
-const selectSortByPrice = document.querySelector('select[data-testid="select-sort-price"]');
+/* ordering by cruise price only*/
 selectSortByPrice.addEventListener("change", function (e) {
   const orderDataByPrice = sortDataByPrice(data, "cruisePrice", e.target.value);
   contenedor.innerHTML = "";
   contenedor.appendChild(renderItems(orderDataByPrice));
 });
 
+/* resetting all*/
 const button = document.querySelector('button[data-testid="button-clear"]');
+const textStats = document.getElementById('text');
 button.addEventListener("click", function () {
   selectSortByPrice.selectedIndex = 0;
   selectSort.selectedIndex = 0;
   selectFilter.selectedIndex = 0;
   contenedor.innerHTML = "";
   contenedor.appendChild(renderItems(data));
- 
+  textStats.textContent = "";
 });
 
-const buttonStats = document.querySelector('button[data-testid="statistics"]');
+/* updating statistics (average price) all and filtered*/
 buttonStats.addEventListener('click', function(){
-  const textStats = document.getElementById('text');
   textStats.textContent= computeStats(data);
-  
-})
+  selectFilter.addEventListener("change", function (e) {
+    const filteredData = filterData(data, "cruisePrice", e.target.value);
+    contenedor.innerHTML = "";
+    contenedor.appendChild(renderItems(filteredData));
+    textStats.textContent= computeStats(filteredData);
+  });
+});
