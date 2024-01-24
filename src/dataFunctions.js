@@ -65,7 +65,7 @@ export const computeStats = (data) => {
   const sumPrice = data.reduce((accumulator, currentValue) => accumulator + currentValue.facts.cruisePrice, 0);
   const numberOfItems = data.length;
 
-  const avgPrice = sumPrice / numberOfItems ;
+  const avgPrice = Math.round(sumPrice / numberOfItems)  ;
   return `The average price per person per cruise is ${avgPrice}`;
 };
 
