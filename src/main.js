@@ -32,7 +32,7 @@ selectFilter.addEventListener("change", function (e) {
     contenedor.innerHTML = "";
     contenedor.appendChild(renderItems(orderPriceFilter));
   });
-  textStats.textContent= computeStats(filteredData);
+  textStats.textContent= "";
 });
 
 /* ordering by ship name only*/
@@ -62,5 +62,10 @@ button.addEventListener("click", function () {
 
 /* updating statistics (average price) all and filtered*/
 buttonStats.addEventListener('click', function(){
-  textStats.textContent= computeStats(data);
+  if (selectFilter.value === 'Price') {
+    textStats.textContent= computeStats(data);
+  } else {
+    const filteredData = filterData(data, "cruisePrice", selectFilter.value);
+    textStats.textContent= computeStats(filteredData);
+  }
 });
