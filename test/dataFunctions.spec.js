@@ -23,31 +23,30 @@ describe('filterData collection tests', () => {
   });
 });
 
-describe('Test de la función sortData', () => {
+describe('sortData by name collection tests', () => {
   const Order = [fakeData[1],fakeData[2],fakeData[0]];
-  describe('La función sortData debe ordenar de manera ascendente y descendente por nombre', () => {
-    it('Ordena de manera asscendente por nombre', () => {
+  describe('sortData function should order by name: ascendent and descendent', () => {
+    it('Should sort by name: ascendent', () => {
       
       const result = sortData(fakeData,"name","asc");
       expect(result).toEqual(Order);
     });
-    it('Ordena de manera descendente por nombre', () => {
+    it('Should sort by name: descendent', () => {
       const result = sortData(fakeData,"name","desc");
       expect(result).toEqual(Order.reverse());
     });
   });
 });
 
-describe('Test de la función sortDataByPrice ', () => {
+describe('sortDataByPrice collection tests', () => {
   const resultOrder = [fakeData[0],fakeData[2],fakeData[1]];
   const resultOrder2 = [fakeData[1],fakeData[2],fakeData[0]];
-  describe('La función sortData debe ordenar de manera ascendente y descendente por precio', () => {
-    it('Ordena de manera asscendente por precio', () => {
-      
+  describe('sortDataByPrice function should order by price: ascendent and descendent', () => {
+    it('Should sort by price: ascendent', () => {
       const result = sortDataByPrice(fakeData,"cruisePrice","low");
       expect(result).toEqual(resultOrder);
     });
-    it('Ordena de manera descendente por precio', () => {
+    it('Should sort by name: descendent', () => {
       const result = sortDataByPrice(fakeData,"cruisePrice","high");
       expect(result).toEqual(resultOrder2);
     });
