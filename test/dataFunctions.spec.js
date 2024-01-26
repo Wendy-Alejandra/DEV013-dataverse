@@ -1,8 +1,6 @@
 import { filterData, sortData, sortDataByPrice, computeStats} from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
-console.log(fakeData);
-
 describe('filterData collection tests', () => {
   const filter1 = [fakeData[0]];
   it('Should filter by price range from 1000-1500', () => {
