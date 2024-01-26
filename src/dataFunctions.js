@@ -14,7 +14,7 @@ export const filterData = (data, filterBy, value) => {
   
 export const sortData = (data, sortBy, sortOrder) => {
   const orderData = data.toSorted((a,b) => {
-    if(sortOrder === 'asc'){
+    if(sortOrder === 'asc'){    
       if(a[sortBy] === b[sortBy]){
         return 0;
       }
