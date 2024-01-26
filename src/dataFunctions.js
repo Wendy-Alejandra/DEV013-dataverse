@@ -13,35 +13,48 @@ export const filterData = (data, filterBy, value) => {
 };
   
 export const sortData = (data, sortBy, sortOrder) => {
-  const orderData = data.toSorted((a, b) => {
-    if(sortOrder === "asc"){    
-      return a[sortBy] - b[sortBy];
-    } else {
-      return b[sortBy] - a[sortBy];
+  const orderData = data.toSorted((a,b) => {
+    if(sortOrder === 'asc'){    
+      if(a[sortBy] === b[sortBy]){
+        return 0;
+      }
+      if(a[sortBy]< b[sortBy]){
+        return -1;
+      }
+      return 1;
     }
-  })
+    else {
+      if(a[sortBy] === b[sortBy]){
+        return 0;
+      }
+      if (a[sortBy] > b[sortBy]){
+        return -1;
+      }
+      return 1;
+    } 
+  });
   return orderData;
 };
 
 export const sortDataByPrice = (data, sortBy, sortOrder) => {
   const orderDataByPrice = data.toSorted((a,b) => {
     if(sortOrder === 'low'){
-      if(a.facts[sortBy] === b.facts[sortBy]){
-        return 0;
+      if(a.facts[sortBy] > b.facts[sortBy]){
+        return 1;
       }
       if(a.facts[sortBy]< b.facts[sortBy]){
         return -1;
       }
-      return 1;
+      return 0;
     }
     else {
-      if(a.facts[sortBy] === b.facts[sortBy]){
-        return 0;
+      if(a.facts[sortBy] < b.facts[sortBy]){
+        return 1;
       }
       if (a.facts[sortBy] > b.facts[sortBy]){
         return -1;
       }
-      return 1;
+      return 0;
     }
   })
   return orderDataByPrice;
