@@ -13,6 +13,9 @@ const selectSortByPrice = document.querySelector('select[data-testid="select-sor
 const buttonStats = document.querySelector('button[data-testid="statistics"]');
 const button = document.querySelector('button[data-testid="button-clear"]');
 const textStats = document.getElementById('text');
+const navMenu = document.querySelector('nav[id="menu"]');
+const openMenu = document.querySelector('button[class="open-menu"]');
+const closeMenu = document.querySelector('button[class="close-menu"]');
 
 
 /* adding event listeners to show on screen*/
@@ -78,3 +81,11 @@ buttonStats.addEventListener('click', function(){
     textStats.textContent= computeStats(filteredData);
   }
 });
+
+/* opening-closing hamburguer menu for screen devices 600px and less */
+openMenu.addEventListener('click', () => {
+  navMenu.classList.add("visible");
+})
+closeMenu.addEventListener('click', () => {
+  navMenu.classList.remove("visible");
+})

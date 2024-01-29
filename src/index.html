@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dataverse</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js" type="module"></script>
   </head>
   <body>
     <div id="main-container">
-      <header>
-        <h1>Cruise Line</h1>
-        <h2>Your Dreamed Vacation</h2>
-      </header>
-         <nav id="menu">
+      <div id="menu-container">
+        <header>
+          <h1>Cruise Line</h1>
+          <h2>Your Dreamed Vacation</h2>
+          <button class="open-menu"><i class="bi bi-list"></i></button>
+        </header>
+        <nav id="menu" class="prueba">
+          <button class="close-menu">
+            <i class="bi bi-x-lg"></i>
+          </button>
           <label for="1-select">Filter by:</label>
           <select data-testid="select-filter" name="price" id="1-select">
             <option hidden id="Ship-price">Price</option>
@@ -30,26 +35,28 @@
             <option value="desc">Name: Z-A</option>
           </select>
           <label for="3-select">Sort by:</label>
-          <select data-testid="select-sort-price" name="price-high-low" id="3-select">
-            <option disable selected value="2">Price</option>  
+          <select
+            data-testid="select-sort-price"
+            name="price-high-low"
+            id="3-select"
+          >
+            <option disable selected value="2">Price</option>
             <option value="low">Low to High</option>
             <option value="high">High to Low</option>
           </select>
           <button data-testid="button-clear">Clear</button>
         </nav>
-        <main>
+      </div>
+      <main>
         <div id="statistics">
           <p id="text"></p>
         </div>
         <button data-testid="statistics">Statistics</button>
-        <div id="root">
-
-        </div>
+        <div id="root"></div>
       </main>
     </div>
-      <footer>
-        By: Camila Arrobo &amp; Wendy Chirinos DEV013 Laboratoria 2024
-      </footer>
-</body>
-
+    <footer>
+      By: Camila Arrobo &amp; Wendy Chirinos DEV013 Laboratoria 2024
+    </footer>
+  </body>
 </html>

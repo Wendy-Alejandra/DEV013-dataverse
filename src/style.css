@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-*{
+* {  
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family:var(--fuente);        
 }
@@ -17,15 +20,15 @@
 }
 
 body{
-    margin: 0;
     background: url(fondo_cruceros.jpg);
     background-size: cover;
 }
 #main-container{
     background-color: var(--azul);
-    border-radius: 20px;
-    margin: 60px 60px;
-    padding: 10px 10px ;
+    border-radius: 1rem;
+    margin: 3.75rem;
+    /* padding: 0.6rem 0.6rem ; */
+    padding-top: 1rem;
     text-align: center;
     list-style-type: none;
 }
@@ -34,62 +37,72 @@ header{
 }
 h1{
     color: var(--blanco);
-    font-size: 35px;
+    font-size: 2rem;
 }
 #menu{
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 6px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 0.4rem;
     background-color: var(--blanco);
     border: 2px solid var(--blanco);
-    border-radius: 18px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+.open-menu {
+    display: none;
+}
+.close-menu {
+    display: none;
+}
 label{
-    padding: 3px;
-    font-size: 20px;
+    padding: 0.2rem;
+    font-size: 1rem;
     font-weight: 700;
-    margin-right: 5px;
+    margin-right: 0.3rem;
 }
 select{
     appearance: none;
     cursor: pointer;
     outline: 0; 
     background-color: var(--gris-claro);
-    padding: 3px;
-    margin-left: 5px;
-    margin-right: 30px;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+    margin-right: 2rem;
     border: 1px solid var(--gris-oscuro);
-    border-radius: 5px;
+    border-radius: 0.3rem;
     font-family: var(--fuente);
-    font-size: 15px;
-    width: 160px;
+    font-size: 1rem;
+    width: 10rem;
 }
-button{
+button[data-testid="button-clear"], button[data-testid="statistics"] {
     background-color: var(--gris-claro);
     border: 1px solid var(--gris-oscuro);
-    border-radius: 5px;
-    padding: 3px;
-    margin-left: 30px;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    margin-left: 2rem;
     font-family: var(--fuente);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
-    width: 160px;
+    width: 10rem;
     cursor: pointer;
+    
 }
-button:hover{
-    background-color: var(--gris-claro);
-    border: 1px solid var(--gris-oscuro);
-    border-radius: 5px;
-    padding: 3px;
-    margin-left: 30px;
+button[data-testid="statistics"] {
+    margin-top: 1rem;
+}
+button[data-testid="button-clear"]:hover, button[data-testid="statistics"]:hover {
+    background-color: var(--amarillo);
+    border: 1px solid var(--naranja);
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    margin-left: 2rem;
     font-family: var(--fuente);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
-    width: 160px;
+    width: 10rem;
     cursor: pointer;
 }
 ul{
@@ -106,23 +119,23 @@ ul{
     align-items: center;
     list-style-type: none;
     background-color: var(--blanco);
-    border-radius: 15px ;
-    margin: 30px;
-    padding: 15px;
+    border-radius: 1rem ;
+    margin: 2rem;
+    padding: 1rem;
     
 }
 img{
     height: 20vw;
-    margin-bottom: 5px;
-    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 dl{
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 700;
     font-style: italic;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 dd{
     margin:0;
@@ -130,32 +143,102 @@ dd{
     list-style-type: none;
 }
 dd[itemprop="totalPrice"]{
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 700;
     background-color: var(--naranja);
-    border-radius: 10px;
-    padding: 3px;
-    margin: 5px 70px;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin: 0.3rem 4.4rem;
 }
 dd[itemprop="totalPrice"]:hover{
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 700;
     background-color: var(--amarillo);
-    border-radius: 10px;
-    padding: 3px;
-    margin: 5px 70px;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    margin: 0.3rem 4.4rem;
 }
 dd[itemprop="departureBoatTerminal"]{
-    font-size: 18px;
+    font-size: 1rem;
     font-style: italic;
     margin-top: 0;
 }
 footer{
     text-align: center;
     color: var(--blanco);
-    font-size: 25px;
+    font-size: 1.6rem;
     font-style: italic;
-    margin: 5px;
-    padding-bottom: 3px;
+    margin: 0.3rem;
+    padding-bottom: 0.2rem;
 }
+
+@media screen and (max-width: 600px) {
+    #main-container {
+        margin: 2rem;
+        padding-right: 0;
+    }
+    #menu-container {
+        /* display: flex; */
+        /* padding-left: 3rem; */
+        /* padding-right: 3rem; */
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        h1 {
+            font-size: 2rem;
+            /* padding-right: 2rem; */
+        }
+        h2 {
+            display: none;
+        }
+        .open-menu {
+            display: block;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+    select {
+        margin: 0;
+        padding: 5px;
+    }
+    #menu {
+        /* visibility: hidden; */
+        /* box-sizing: content-box; */
+        /* position: absolute; */
+        /* top: 8rem; */
+        margin: 0;
+        /* bottom: 12rem; */
+        background-color: var(--naranja);
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: end;
+        padding: 2rem;
+        
+        .close-menu {
+            display: flex;
+            /* padding-left: 2rem; */
+            justify-content: flex-end;
+        }
+        button[data-testid="button-clear"] {
+            margin-right: 0;
+            margin-top: 1rem;
+            background-color: var(--blanco);
+            cursor: pointer;
+        }
+    }
+    .prueba {
+        visibility: hidden;
+    }
+    .prueba.visible {
+        visibility: visible;
+    }
+    /*option {
+        text-align: right;
+    }  */
+}
+
+
 
