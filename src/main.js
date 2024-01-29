@@ -50,17 +50,26 @@ selectSortByPrice.addEventListener("change", function (e) {
 });
 
 /* resetting all*/
-
 button.addEventListener("click", function () {
   selectSortByPrice.selectedIndex = 0;
   selectSort.selectedIndex = 0;
   selectFilter.selectedIndex = 0;
+  textStats.textContent = "";
   contenedor.innerHTML = "";
   contenedor.appendChild(renderItems(data));
-  textStats.textContent = "";
+  selectSortByPrice.addEventListener("change", function (e) {
+    const orderDataByPrice = sortDataByPrice(data, "cruisePrice", e.target.value);
+    contenedor.innerHTML = "";
+    contenedor.appendChild(renderItems(orderDataByPrice));
+  });
+  selectSort.addEventListener("change", function (e) {
+    const orderData = sortData(data, "name", e.target.value);
+    contenedor.innerHTML = "";
+    contenedor.appendChild(renderItems(orderData));
+  });
 });
 
-/* updating statistics (average price) all and filtered*/
+/* updating statistics (average price) all and filtered */
 buttonStats.addEventListener('click', function(){
   if (selectFilter.value === 'Price') {
     textStats.textContent= computeStats(data);
