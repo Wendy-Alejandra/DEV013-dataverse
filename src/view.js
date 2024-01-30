@@ -24,7 +24,7 @@ export const renderItems = (data) => {
     ddDescription.setAttribute('itemprop', 'description');
 
     dlName.innerHTML = `${card.name}`;
-    ddPort.innerHTML = `Departure Port: ${card.facts.departurePort}`;
+    ddPort.innerHTML = `Port: ${card.facts.departurePort}`;
     ddPrice.innerHTML = `$${card.facts.cruisePrice}`;
     ddDescription.innerHTML = `AVG PER PERSON`;
  

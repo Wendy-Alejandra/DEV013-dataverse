@@ -27,7 +27,6 @@ body{
     background-color: var(--azul);
     border-radius: 1rem;
     margin: 3.75rem;
-    /* padding: 0.6rem 0.6rem ; */
     padding-top: 1rem;
     text-align: center;
     list-style-type: none;
@@ -38,6 +37,10 @@ header{
 h1{
     color: var(--blanco);
     font-size: 2rem;
+}
+h2 {
+    margin: 0.8rem;
+    font-style: italic;
 }
 #menu{
     margin-left: 4rem;
@@ -77,6 +80,9 @@ select{
     font-size: 1rem;
     width: 10rem;
 }
+select:hover{
+     background-color: var(--amarillo);
+}
 button[data-testid="button-clear"], button[data-testid="statistics"] {
     background-color: var(--gris-claro);
     border: 1px solid var(--gris-oscuro);
@@ -88,22 +94,23 @@ button[data-testid="button-clear"], button[data-testid="statistics"] {
     font-weight: 600;
     width: 10rem;
     cursor: pointer;
-    
+}
+#text {
+    margin-top: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border-radius: 0.5rem;
+    font-size: larger;
+    background-color: var(--naranja);
+}
+#text:hover {
+    background-color: var(--amarillo);
 }
 button[data-testid="statistics"] {
-    margin-top: 1rem;
+    margin: 1rem;
 }
 button[data-testid="button-clear"]:hover, button[data-testid="statistics"]:hover {
     background-color: var(--amarillo);
-    border: 1px solid var(--naranja);
-    border-radius: 0.3rem;
-    padding: 0.2rem;
-    margin-left: 2rem;
-    font-family: var(--fuente);
-    font-size: 1rem;
-    font-weight: 600;
-    width: 10rem;
-    cursor: pointer;
 }
 ul{
     margin:0;
@@ -115,23 +122,22 @@ ul{
     justify-content: center;
 }
 .cards{
-    
-    align-items: center;
-    list-style-type: none;
+    flex: 0 0 calc(33.33% - 0);
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
     background-color: var(--blanco);
     border-radius: 1rem ;
-    margin: 2rem;
-    padding: 1rem;
     
 }
 img{
-    height: 20vw;
-    margin-bottom: 0.3rem;
+    width: 320px;
+    height: 320px;
     border-radius: 0.5rem;
     cursor: pointer;
 }
 dl{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-style: italic;
     margin-top: 0;
@@ -151,15 +157,10 @@ dd[itemprop="totalPrice"]{
     margin: 0.3rem 4.4rem;
 }
 dd[itemprop="totalPrice"]:hover{
-    font-size: 1.4rem;
-    font-weight: 700;
     background-color: var(--amarillo);
-    border-radius: 0.6rem;
-    padding: 0.2rem;
-    margin: 0.3rem 4.4rem;
 }
 dd[itemprop="departureBoatTerminal"]{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: italic;
     margin-top: 0;
 }
@@ -178,66 +179,76 @@ footer{
         padding-right: 0;
     }
     #menu-container {
-        /* display: flex; */
-        /* padding-left: 3rem; */
-        /* padding-right: 3rem; */
         margin: 0;
     }
     header {
         display: flex;
         justify-content: space-around;
-        h1 {
-            font-size: 2rem;
-            /* padding-right: 2rem; */
-        }
-        h2 {
-            display: none;
-        }
-        .open-menu {
-            display: block;
-            border: 0;
-            background-color: transparent;
-            cursor: pointer;
-        }
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        display: none;
+    }
+    .open-menu {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--blanco);
+        font-size: 3rem;
     }
     select {
         margin: 0;
         padding: 5px;
     }
+    select:hover {
+        background-color: var(--amarillo);
+    }
     #menu {
-        /* visibility: hidden; */
-        /* box-sizing: content-box; */
-        /* position: absolute; */
-        /* top: 8rem; */
+        position: fixed;
+        top: 5.45rem;
+        right: 2rem;
         margin: 0;
-        /* bottom: 12rem; */
         background-color: var(--naranja);
         flex-direction: column;
         justify-content: flex-end;
         align-items: end;
         padding: 2rem;
-        
-        .close-menu {
-            display: flex;
-            /* padding-left: 2rem; */
-            justify-content: flex-end;
-        }
-        button[data-testid="button-clear"] {
-            margin-right: 0;
-            margin-top: 1rem;
-            background-color: var(--blanco);
-            cursor: pointer;
-        }
     }
-    .prueba {
+    .close-menu {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    button[data-testid="button-clear"] {
+        margin-right: 0;
+        margin-top: 1rem;
+        background-color: var(--blanco);
+        cursor: pointer;
+    }
+    button[data-testid="button-clear"]:hover {
+        background-color: var(--amarillo);
+    }
+
+    .hamburguer {
         visibility: hidden;
     }
-    .prueba.visible {
+    .hamburguer.visible {
         visibility: visible;
     }
-    /*option {
-        text-align: right;
-    }  */
+    #text {
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        background-color: var(--naranja);
+    }
+    #text:hover {
+        background-color: var(--amarillo);
+    }
 }
 
 

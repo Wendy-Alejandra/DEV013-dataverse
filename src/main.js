@@ -72,7 +72,7 @@ button.addEventListener("click", function () {
   });
 });
 
-/* updating statistics (average price) all and filtered */
+/* updating statistics (average price) all cards and filtered cards*/
 buttonStats.addEventListener('click', function(){
   if (selectFilter.value === 'Price') {
     textStats.textContent= computeStats(data);
