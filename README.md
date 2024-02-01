@@ -1,202 +1,222 @@
-# Dataverse
+# CRUISE LINE
+<p align="center">
+  <img src= https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white alt="Visual Studio Code">
+  <img src=https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) alt="HTML5">
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
+   
+</p>
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Funcionalidades](#4-funcionalidades)
-* [5. Consideraciones técnicas](#5-consideraciones-técnicas)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Hacker edition](#7-hacker-edition)
+* [1. Definición del proyecto](#1-definición-del-proyecto)
+* [2. Funcionalidades](#2-funcionalidades)
+* [3. Historias de usuario](#3-historias-de-usuario)
+* [4. Generación de datos](#4-generación-de-datos)
+* [5. Diseño de la Interfaz de Usuaria](#5-diseño-de-la-interfaz-de-usuaria)
+* [6. Estructura del proyecto](#6-estructura-del-proyecto)
+* [7. Criterios de aceptación mínimos del proyecto](#7-criterios-de-aceptación-mínimos-del-proyecto)
 * [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 * [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
-* [10. Consideraciones para pedir tu Project Feedback](#10-consideraciones-para-pedir-tu-project-feedback)
+* [10. Consideraciones para el Project Feedback](#10-Consideraciones-para-el-Project-Feedback)
 
 ***
 
-## 1. Preámbulo
+## 1. Definición del proyecto
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+En este proyecto se **construyó una página web de cruceros en donde se visualiza un  _conjunto (set) de datos_** generados con la herramienta de Inteligencia Articial [ChatGPT](https://openai.com/chatgpt).
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-las usuarias, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+## 2. Funcionalidades
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por las
-usuarias, al lado derecho.
+La página web que permite **visualizar la data,
+filtrarla, ordenarla y calcular el promedio de precios de los cruceros.** 
 
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
+### Visualización
 
-## 2. Resumen del proyecto
+* Para la visualización de la data generada en [ChatGPT](https://openai.com/chatgpt) se utilizó un componente UI conocido como tarjeta (card) que resalta los valores de las propiedades de la data que le interesaría a los usuarios ver como: imagen, nombre, precio y puerto de salida o embarque del crucero. 
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que vas a generar con [prompting](https://www.itmadrid.com/que-es-un-prompt-en-inteligencia-artificial-ia/).
-Esta página web se adecuará a lo que descubras que tu usuaria
-necesita.
+### Filtrado
+* Los usuarios pueden filtrar la data de los cruceros por su propiedad de precio en los siguientes rangos: 
+  - **Price $1000-$1500.**  
+  - **Price $1200-$2000.** 
+  - **Price $2000-$2500.**
+  - **Price $2500-$3000.**
 
-Además, en este proyecto utilizarás herramientas de
-[inteligencia artificial](https://es.wikipedia.org/wiki/Inteligencia_artificial)
-como [ChatGPT](https://openai.com/chatgpt), [ExplainDev](https://explain.dev/),
-entre otras para generar un set de datos en un archivo javascript.
+### Ordenado
+* **Ordenado por nombre:** Los usuarios pueden ordenar la data con la propiedad de nombre alfabéticamente de forma ascendente (A-Z) o de forma descendente (Z-A).
 
-El propósito de generar los datos en esta manera es brindarte la oportunidad de
-adentrarte en el empleo de herramientas impulsadas por la inteligencia
-artificial, así como en [técnicas de
-prompting](https://learnprompting.org/es/docs/intro).
+* **Ordenamiento por precio:** Los usuarios pueden ordenar la lista de cruceros según el precio de cada uno, lo que facilita la búsqueda de cruceros económicos al proporcionar una ruta eficiente de la información deseada. 
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y calcular alguna estadística**. Con estadística
-nos referimos a distintos cálculos que puedes hacer con los datos para mostrar
-información aún más relevante a las usuarias (promedio, el valor máximo
-o mínimo, etc).
+Las funciones de ordenado por nombre y precio operan sobre la data filtrada.
 
-## 3. Consideraciones generales
+### Estadísticas
+* **Promedio de precio de los cruceros:** Al hacer click en el botón de estadística los usuarios puede visualizar el promedio de los precios de los cruceros. Ésta función también permite ver el promedio en nuestra data filtrada.
 
-* Este proyecto se debe resolver en duplas.
-* El rango de tiempo estimado para completar el proyecto es de 4 a 5 Sprints.
-* El tiempo estimado que deberías dedicar a la [generación de los datos](#generar-los-datos)
-  es de máximo un sprint. Además, al final del proyecto deberás presentar
-  un [screenshot del prompt utilizado](#prompt-utilizado).
-* Si ves que te va a tomar más tiempo,
-  deberás utilizar los datos de ejemplo que los vas a encontrar en
-  esta ruta: `./src/data/dataset.js`.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
+### Limpiar (Clear)
+* Se agregó el botón de limpiar que permite a los usuarios reiniciar la página web, limpiando filtros, ordenamiento y estadísticas.
 
-## 4. Funcionalidades
+Las funciones de filtrar, ordenar, estaditísticas y limpiar agregan el contenido de una manera dinámica utilizando JavaScript.
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y calcular alguna estadística**.
+## 3. Historias de usuario
+En el proyecto realizaron tres historias de usuarios para describir las funcionalidades de la página web desde la perpectiva de los usuarios finales.
 
-Aquí definimos en más detalle las funcionalidades mínimas que debe tener:
+### 3.1. Primera historia de usuario
 
-* La aplicación debe permitir a la usuaria ver los items de la data en una visualización,
-  que puede ser [tipo tarjetas](http://www.uxables.com/diseno-ux-ui/que-es-y-como-disenar-una-card/)
-  o cualquier otra forma que tú decidas como la adecuada (pero desde aquí
-  referimos a los items como "tarjetas"). **Cada una de las tarjetas debe estar
-  contenida en un elemento `<li>` y estos a su vez contenido en
-  un elemento `<ul>`.**
+Los usuarios quieren ir de vacaciones en un crucero de Cruise Lines y desean ver un listado con información detallada de todos los cruceros disponibles en la página web.
 
-* El elemento `<ul>` deberá ser hijo de un elemento con atributo _id_
-  de valor "root". **Este es un paso importante para que tu**
-  **aplicación tenga la estructura requerida**
+- **Criterios de Aceptación de usuario.**
+  - La página web estará en ingles.
+  - La información de cada crucero se visualiza utilizando el componente UI de tarjetas que están distribuidas en forma de grilla.
+  - Cada crucero proporciona la siguiente información: imagen, nombre, el puerto de salida y el precio por persona del crucero.
+  - No hay ningún elemento interactivo en la pantalla.
 
-* Las tarjetas deben resaltar los valores de las propiedades de la data que
-  le interesaría a la usuaria ver. Por ejemplo: nombre, fecha, imagen, etc.
-  **Si vas a filtrar u ordenar por una propiedad, la tarjeta tiene que mostrar
-  el valor de esta propiedad a la usuaria.**
+- **Pasos para cumplir con los criterios de aceptación**
+  - Generación de la data con chat GPT.
+  - Diseño del prototipo de media fidelidad.
+  - Estructurar el HTML.
+  - Darle estilos a la página con CSS.
+  - Subir la información a Github.
 
-* La interfaz debe estructurar semánticamente la data usando el estándar [microdatos](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata).
-  Es obligatorio usar al menos los atributos [`itemscope`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemscope),
-  [`itemtype`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype)
-  y el atributo [`itemprop`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop).
+- **Definiciones de terminado (para el equipo):**
+  - Todo el código está subido a la rama del repositorio en GitHub.
+  - Se realizan 2 pruebas con usuarios para saber que entiendan todo.
 
-  Por ejemplo, la siguiente data correspondiente a Ada Lovelace:
+<p align="center">
+<img src= historia-usuario-1.png alt="historia de usuario 1">
+</p>
 
-  ```json
-    {
-      "id": "ada-lovelace",
-      "name": "Ada Lovelace",
-      "shortDescription": "Pionera de la informática, fue la primera programadora.",
-      "description": "Una visionaria del siglo XIX ...",
-      "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
-      "facts": {
-        "yearOfBirth": 1843,
-        "placeOfBirth": "London, England",
-        "mainField": "Computer Science",
-      }
+### 3.2. Segunda historia de usuario
+
+Los usuarios quieren ir de vacaciones en un crucero de Cruise Lines para ello desean conocer los cruceros disponibles y poder filtrarlos por un rango de precio y ordenarlos de forma ascendente y descendente por su propiedad de precio (económico-caro) y su propiedad de nombre (alfabéticamente).
+
+- **Criterios de Aceptación de usuario.**
+  - La información de cada crucero se visualiza utilizando el componente UI de tarjetas que están distribuidas en forma de grilla.
+  - Se tiene un menú en la parte superior donde se puede filtrar la información de los cruceros por rango de precios.
+  - Se puede ordenar los crucero en orden alfabético ascendente (A-Z) y descendente(Z-A) los nombres de cruceros.
+   - Se puede ordenar la información utilizando su propiedad de precio de manera ascendente (económico-caro) y descendente(caro-económico).
+
+- **Pasos para cumplir con los criterios de aceptación**
+  - Colocar un menú  en la pagina principal que contenga la función de filtrado por rango de precios, la función de ordenado de forma ascendente y descendente utilizando las propiedades de nombre y precio de la data.
+  - Realizar la función de filtrado `(filterData)` en JavaScript por rango de precios de los cruceros.
+  - Realizar las funciones de ordenado `(sortData)` y `(sortDataByPrice)` que ordenan la data por orden  ascendente y descendente de acuerdo a las propiedades de precio y nombre en la página principal.
+  - Subir la información a Github.
+
+- **Definiciones de terminado (para el equipo):**
+  - Todo el código está subido a la rama del repositorio en GitHub.
+  - Se publica la página web en GitHub Pages.
+  - Se realizan 2 pruebas con usuarios para saber que entiendan todo.
+
+<p align="center">
+<img src= historia-usuario-2.png alt="historia de usuario 2">
+</p>
+
+### 3.3. Tercera historia de usuario
+
+Los usuarios quieren ir de vacaciones en un crucero de Cruise Lines para ello desean conocer los cruceros disponibles y poder filtrarlos por un rango de precio y ordenarlos de forma ascendente y descendente por su propiedad de precio (económico-caro) y su propiedad de nombre (alfabéticamente).Así mismo, tener un botón de limpiar que vuelva la página a su estado inicial sin aplicar ningún filtro. Además de tener un botón que me permita calcular el promedio de precios de los cruceros al inicio de la página y cada vez que se filtre la información.
+
+- **Criterios de Aceptación de usuario.**
+  - La información de cada crucero se visualiza utilizando el componente UI de tarjetas que están distribuidas en forma de grilla.
+  - Se tiene un menú en la parte superior donde se puede filtrar la información de los cruceros por rango de precios.
+  - Se puede ordenar los crucero en orden alfabético ascendente (A-Z) y descendente(Z-A) los nombres de cruceros.
+   - Se puede ordenar la información utilizando su propiedad de precio de manera ascendente (económico-caro) y descendente(caro-económico).
+   - Tener un botón que me permita calcular el promedio de precios de los cruceros. El promedio también se debe calcular cuando se filtre la información.
+   - Tener botón de limpiar que permita volver todo a la página inicial.
+
+- **Pasos para cumplir con los criterios de aceptación**
+  - Colocar en menú el botón CLEAR.
+  - Asignarle a la función al botón CLEAR por medio de JavaScript que al momento de presionarlo vuelva a la pàgina inicial sin haber aplicado ningún filtro u orden.
+  - Colocar un botón STATISTICS debajo del menú principal.
+  - Asignarle al botón STATISTICS la funcionalidad mediante JavaScript que nos permita calcular el promedio de precios de los cruceros en la página principal y cuando se apliquen los filtros.
+  - Subir la información a Github.
+
+- **Definiciones de terminado (para el equipo):**
+  - Todo el código está subido a la rama del repositorio en GitHub.
+  - Se publica la página web en GitHub Pages.
+  - Se realizan 2 pruebas con usuarios para saber que entiendan todo.
+
+<p align="center">
+<img src= historia-usuario-3.png alt="historia de usuario 3">
+</p>
+
+## 4. Generación de datos
+
+En la generación de datos debemos tener un arreglo con 24 objetos. Y la estructura de cada objeto es la siguiente:
+
+* `id`: Identificador único. Debe ser un string de no más de 32 characteres, en minúscula, compuesto solo por letras, números, underscore (`_`) o guión (`-`). 
+* `name`: El nombre de nuestro crucero.
+* `shortDescription`: Descripción corta del crucero. Esta descripción tiene como máximo 20 palabras.
+* `description`: Descripción extendida del crucero. Esta descripción tiene entre 80 y 100 palabras. 
+* `imageUrl`: URL de la imagen de cada crucero. Esta imagen fue generada a través de inteligencia artifical utilizando el
+[generador de imágenes de Bing](https://www.bing.com/create). 
+* `facts`: Cada crucero tiene **7** propiedades:
+
+  ```js 
+      facts: {
+      shipSize: 362,
+      shipClass: 'Clase Oasis',
+      visitingPorts: 'Port Canaveral, CocoCay, Nassau, Cozumel, Roatán, Falmouth',
+      departurePort: 'Port Canaveral',
+      durationInDays: 7,
+      cruisePrice: 1750,
+      cruiseDate: '2024-08-01'
     }
-  ```
+  
+  ```   
+  Los _valores de las propiedades_, son de tipo `number`, `boolean` o un `string` y no tienen más de 64 caracteres.
 
-  puede ser estructurada semánticamente en HTML como:
+La data final de nuestro proyecto, según los requisitos anteriores es la siguiente:
 
-  ```html
-  <dl itemscope itemtype="WomenInTech">
-    <img src="URL_DE_LA_IMAGEN_GENERADA" alt="Ada Lovelace" />
-    <dt>Nombre:</dt><dd itemprop="name">Ada Lovelace</dd>
-    <dt>Descripción:</dt><dd itemprop="description">Pionera de la informática, fue la primera programadora.</dd>
-    <dt>Año de nacimiento:</dt><dd itemprop="yearOfBirth">1843</dd>
-    <dt>Lugar de nacimiento:</dt><dd itemprop="placeOfBirth">London, England</dd>
-    <dt>Campo de desempeño:</dt><dd itemprop="mainField">Computer Science</dd>
-  </dl>
-  ```
+```js
+const data = [
+  {
+    id: '1',
+    name: 'Symphony of the Seas',
+    shortDescription: 'Descubre la grandeza en Symphony of the Seas, el crucero más grande del mundo. ¡Aventuras emocionantes te esperan!',
+    description: 'Symphony of the Seas, parte de la flota de Royal Caribbean Group, es el crucero más grande del mundo. Con un ambiente lujoso y emocionante, ofrece una experiencia única de primer nivel. Explora destinos exóticos, disfruta de deliciosa gastronomía y participa en actividades emocionantes. Con una eslora impresionante, este barco ha sido construido con tecnología de vanguardia. Disfruta de tus vacaciones con comodidades de primera clase y un itinerario que te llevará a lugares inolvidables como Miami, Cococay, Cozumel, Roatán, Puerto Costa Maya.',
+    imageUrl: 'https://github.com/Wendy-Alejandra/DEV013-dataverse/blob/main/src/data/images/symphonyOfTheSeasCaribe.jpeg?raw=true',
+    facts: {
+      shipSize: 362,
+      shipClass: 'Clase Oasis',
+      visitingPorts: 'Miami, Cococay, Cozumel, Roatán, Puerto Costa Maya',
+      departurePort: 'Miami',
+      durationInDays: 7,
+      cruisePrice: 1500,
+      cruiseDate: '2024-05-01'
+    }
+  },
+  //... 23 objetos más
+]
+```
 
-* La aplicación debe calcular y visualizar una estadística de la data. Puede
-  ser una propiedad computada de cada item, como una propiedad adicional
-  (por ejemplo, el índice de masa corporal de cada pokemon) o unas estadísticas
-  de la data completa (por ejemplo, total de personas nacidas en los años 80s).
+### 4.1. Prompt utilizado
 
-* La aplicación debe permitir a la usuaria filtrar la data. Deberás usar
-  un elemento [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
-  con [un atributo de datos](https://developer.mozilla.org/es/docs/Learn/HTML/Howto/Use_data_attributes)
-  `data-testid="select-filter"`, y un atributo `name` con el nombre
-  de la propiedad por la que filtrará (por ejemplo, si vas a filtrar por "type",
-  el `<select>` tendrá  `name="type"`). Los `<option>` de este `<select>` deberán
-  tener en el atributo `value` el valor del filtro (por ejemplo, si vas a filtrar
-  por type "fire" sería `<option value="fire">Fire</option>`).
+<p align="center">
+<img src= prompting-1.png alt="prompting 1">
+<img src= prompting-2.png alt="prompting 2">
+<img src= prompting-3.png alt="prompting 3">
+</p>
 
-* La aplicación debe permitir a la usuaria ordenar la data.
-  - Tendrá al menos un control `<select>` para ordenar.
-  - Si usas solo un control `<select>`, debe tener
-    [un atributo de datos](https://developer.mozilla.org/es/docs/Learn/HTML/Howto/Use_data_attributes)
-    `data-testid="select-sort"` y un atributo `name` con el nombre de la
-    propiedad por la que ordenará. (por ejemplo, si vas a ordenar por
-    "num" seria `name="num"`). Este `<select>` tendrá dos [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)
-    con `value` `asc` y `desc`, para ordenar ascendente y descendente la data
-    respectivamente (por ejemplo, `<option value="asc">A - Z</option>`).
-  - Una alternativa es ofrecer la usuaria un ordenamiento mas complejo.
-    Podrías implementar ordenar por varios propiedades. En este caso sería con
-    un `<select>` con un atributo de datos `data-testid="select-sort"`, y que
-    contiene hijos `<option>` con un `value` del nombre de la propiedad con
-    cual vas a ordenar. (Por ejemplo, `<option value="name">Nombre</option>`).
-    También, necesitarás otro control (`<radio>`,`<select>`, etc.) para decir
-    que el ordenamiento es ascendente o descendente. Este control secundaria
-    tendrá un atributo `name="sort-order"`, y tiene values `asc` y `desc`.
+## 5. Diseño de la Interfaz de Usuaria
+El diseño de interfaz de usuario es esencial para crear experiencias web efectivas y satisfactorias para los usuarios, teniendo en cuenta aspectos estéticos, funcionales y de usabilidad.
 
-* Las funcionalidades de ordenar deben operar sobre la data filtrada.
-  Por ejemplo, si filtro los pokemones de tipo fuego y luego los ordeno por
-  nombre ascendentemente, la aplicación deberá mantener el filtro aplicado y
-  ordenar los pokemones de tipo fuego.
+En el presente proyecto se realizaron en [Figma](https://www.figma.com/file/V5doEKg8V9PpNrpNUzrGH3/Prototipos-HU1?type=design&node-id=0%3A1&mode=design&t=QLpp7qFZiz18dmBt-1) dos prototipos de alta fidelidad con la metodología Mobile First.
 
-* La aplicación debe permitir a la usuaria reiniciar la aplicación, limpiando
-  filtros y ordenamiento, con un `<button>` con un atributo de datos
-  `data-testid="button-clear"`.
+### 5.1. Prototipo de baja fidelidad
+<p align="center">
+<img src= low-fidelity-mobile-prototipe.png alt="low fidelity mobile prototipe">
+<img src= low-fidelity-desktop-prototipe.png alt="hilowgh fidelity desktop prototipe">
+</p>
 
-* Las operaciones de filtrar, ordenar, limpiar, etc. no deben recargar
-  la página, si no que deben agregar el contenido en una manera
-  dinámica via javascript.
+### 5.2. Prototipo de alta fidelidad
+<p align="center">
+<img src= mobile-prototipe.png alt="high fidelity mobile prototipe">
+<img src= desktop-prototipe.png alt="high fidelity desktop prototipe">
+</p>
 
-* La aplicación será _responsive_, es decir, debe visualizarse sin problemas
-  desde distintos tamaños de pantallas: móviles, tablets y desktops.
-
-Los siguientes wireframes, son ejemplos de una interfaz que puede cumplir con esta
-funcionalidad. Como podrás ver, estos diseños cumplen con la metodología
-[Mobile First](https://developer.mozilla.org/es/docs/Glossary/Mobile_First), la misma
-que te recomendamos utilizar en todos tus proyectos:
-
-Diseño Mobile:
-
-* [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14)
-* [Wireframe mobile 2](https://github.com/Laboratoria/curriculum/assets/123121338/bf96d3ce-150f-47a2-a605-2efac2e0497b)
-
-Diseño Desktop:
-
-* [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png)
-* [Wireframe desktop 2](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137087-6cef16bc-643a-4d6d-bc1c-e0daaeb21c88.png)
-
-## 5. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#7-hacker-edition) más arriba.
+## 6. Estructura del Proyecto
 
 El _boilerplate_ contiene una estructura de archivos como punto de partida así
 como toda la configuración de dependencias:
@@ -220,103 +240,11 @@ como toda la configuración de dependencias:
 
 ```
 
-### `src/index.html`
-
-Como en el proyecto anterior, existe un archivo `index.html`. Como ya sabes,
-acá va la página que se mostrará a la usuaria. También nos sirve para indicar
-qué scripts se usarán y unir todo lo que hemos hecho.
-
-### `src/main.js`
-
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_).
-
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
-
-En este archivo encontrarás una serie de _imports_ listos para _cargar_
-las diferentes fuentes de datos.
-
-Por ejemplo, lost datos con los que vas a trabajar,
-los encontrarás en la siguiente línea:
-
-```js
-import data from './data/dataset.js';
-```
-
-### `src/dataFunctions.js`
-
-El corazón de este proyecto es la manipulación de datos a través de arreglos
-y objetos.
-
-Este archivo va a contener toda la funcionalidad que corresponda
-a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
-
-* `filterData(data, filterBy, value)`: esta función recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `filterBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere filtrar.
-  El tercer parámetro, `value`, indica el valor de campo que queremos filtrar.
-
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
-
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada, esta función debe usar el método reduce.
-
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que la usuaria interactúe
-(click, filtrado, ordenado, ...).
-
-### `src/data`
-
-En esta carpeta están los datos con los que vas a trabajar (los datos de ejemplo
-o los datos que generarías con ayuda de la inteligencia artificial).
-
-### `test/dataFunctions.spec.js`
-
-En este archivo tendrás hacer pruebas unitarias de las funciones
-implementadas en el archivo `dataFunctions.js`. (`filterBy`, `sortBy`, etc.)
-
-### `test/data.js`
-
-En esta archivo puedes construir y exportar data "mock" para usar en los tests.
-Es mas fácil probar un arreglo de 5 elementos de un arreglo de 24, por eso
-vas a crear una muestra de la data que quieres probar. Como mínimo
-debes exportar un variable se llama `data`, pero puedes definir y exportar mas
-si sea necesario para tus tests.
-
-### `src/view.js`
-
-Para alcanzar mejor separación de responsabilidades en el código este
-archivo debe tener todas las funciones que utilizara para renderizar
-los elementos dinámicamente.
-
-Al menos se requeriere una función obligatoria:
-
-* `renderItems(data)`: esta función recibe el arreglo de data para renderizar
-  los elementos de cada item, y debería volver un elemento DOM o
-  un string de HTML.
-
-## 6. Criterios de aceptación mínimos del proyecto
+## 7. Criterios de aceptación mínimos del proyecto
 
 ### Criterios de código
 
-Con cada objetivo de aprendizaje, evaluamos que el código cumpla con algunos
-criterios. Lo cual no excluye que puedas usar otras opciones, por ejemplo
-en el caso de los selectores, proponemos el uso de `querySelector`,
-no significa que no puedes usar `querySelectorAll` o `getElementId` también.
-
-Puedes ejecutar las pruebas de cada grupo de objetivos de aprendizaje de manera
+Prueba de cada grupo de objetivos de aprendizaje de manera
 individual con los siguientes comandos:
 
 ``` sh
@@ -423,227 +351,15 @@ npm run test:oas // Esto es para correr todos los tests de OAs
     y [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
     para importar y exportar valores desde un modulo JavaScript.
 
-### Criterios del proyecto
-
-#### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuaria.
-
-#### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarias, escribe las [Historias
-de Usuaria](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que la usuaria necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarias.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-Usa tus historias de usuario para planificar tus sprints dividiendo
-cada historia en tareas.
-
-En la medida de lo posible, termina una Historia de Usuario antes de pasar
-a la siguiente (cumpliendo con la Definición de Terminado y los Criterios de Aceptación).
-
-#### Generar los datos
-
-La temática será a tu gusto, por ejemplo, pueden ser personajes importantes
-en la historia, personajes inventados, países, películas... etc.
-
-En el próximo proyecto, con la ayuda de la inteligencia artificial, deberás
-hacer que la usuaria pueda chatear con la data generada.
-Por ejemplo, si la data está mostrando un país, la usuaria podría
-preguntarle en que año fue fundado o cual es su capital, etc.
-Tenlo en cuenta a la hora de generar tu dataset.
-
-Esta data la vas a guardar en un archivo javascript. Este archivo,
-debe exportar un arreglo con 24 objetos. Y la estructura de cada objeto
-debe ser la siguiente:
-
-* `id`: Identificador único (no pueden haber dos elementos con el mismo `id`).
-  Debe ser un string de no más de 32 characteres, en minúscula, compuesto solo
-  por letras, números, underscore (`_`) o guión (`-`). Por ejemplo: `"ada-lovelace"`.
-* `name`: El nombre del personaje, país, película, etc.
-* `shortDescription`: Descripción corta del elemento. Esta descripción deberá
-  tener como máximo 20 palabras.
-* `description`: Descripción extendida del elemento. Esta descripción deberá
-  tener entre 80 y 100 palabras. Al momento de mostrar este dato en pantalla
-  puedes truncarlo para que no ocupe tanto espacio.
-* `imageUrl`: URL de la imagen. Esta imagen será generada a través de alguna
-  herramienta basada en inteligencia artifical. Una vez generada la imagen,
-  y guardada en tu repo, deberás agregar la URL en este campo.
-* `facts`: Un objeto con al menos **3** "hechos" o "info" sobre este elemento, en
-  formato `"nombre": "valor"`, por ejemplo:
-
-  ```json
-  "facts": {
-    "yearOfBirth": 1843,
-    "placeOfBirth": "London, England",
-    "mainField": "Computer Science",
-  }
-  ```
-
-  Los _nombres de las propiedades_, deben estar en formato _camelCase_.
-  Por ejemplo **ninguno** de los siguientes nombres sería válido:
-
-  ```json
-  "facts": {
-    "year_of_birth": 1843,
-    "Place of Birth": "London, England",
-    "MainField": "Computer Science",
-  }
-  ```
-
-  Los _valores de las propiedades_, sólo pueden ser de tipo `number`, `boolean`
-  o un `string` de no más de 64 caracteres (este **no** tiene restricciones sobre
-  el tipo de caracteres que puede contener).
-
-  Y por último ten en cuenta 2 cosas:
-  - Todos los elementos del dataset deben compartir las mismas propiedades en
-    `facts`, es decir, que si un elemento tiene una propiedad `yearOfBirth`,
-    el resto de elementos del array también deben tener esa propiedad.
-  - No es necesario que los nombres de las propiedades estén en inglés,
-    `"lugarDeNacimiento"` es un nombre igual de válido.
-
-* `extraInfo`: Y por último un campo libre opcional, similar a `facts`. Si lo
-  necesitas, aquí puedes poner cualquier otro tipo de información en formato
-  donde puedes poner otra info que necesites en formato `"nombre": "valor"`,
-  pero sin restricciones sobre el tipo de dato del valor. Por ejemplo:
-
-  ```json
-  "extraInfo": {
-    "imagePrompt": "Un texto bien, bien largo...",
-    "writings": [
-      "Vol. 1",
-      "Vol. 2",
-      "Vol. 3",
-      "Vol. 4"
-    ]
-  }
-  ```
-
-Un ejemplo de data, según los requisitos anteriores podría ser:
-
-```js
-export default [
-  {
-    "id": "ada-lovelace",
-    "name": "Ada Lovelace",
-    "shortDescription": "Pionera de la informática, fue la primera programadora.",
-    "description": "Una visionaria del siglo XIX ...",
-    "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
-    "facts": {
-      "yearOfBirth": 1843,
-      "placeOfBirth": "London, England",
-      "mainField": "Computer Science",
-    }
-  },
-  //... 23 objetos más
-]
-```
-
-La data generada deberás reemplazarla por el contenido de este archivo:
-`./src/data/dataset.js`.
-
-**El tiempo estimado que deberías dedicar a la generación de estos datos
-es de máximo un sprint.** Si transcurrido un sprint, no tienes un
-conjunto de datos generados, deberás
-utilizar los datos de ejemplo ubicados en la ruta:
-`./src/data/dataset.js`.
-
-Las URLs de las imágenes dentro del archivo javascript, deben enlazar
-a las imágenes para cada elemento del array.
-Estas imágenes pueden ser generadas por la inteligencia artificial o imágenes
-que puedas encontrar en la web.
-Para la generación de imágenes te recomendamos usar el
-[generador de imágenes de Bing](https://www.bing.com/create).
-Una vez que tengas la imagen, descárgala u obtiene su URL, para agregársela
-al dataset.
-
-Una vez que tengas el archivo javascript completo, recuerda correr los test con
-`npm run test` para verificar que el archivo esté cumpliendo con lo
-solicitado.
-
-Una vez que hayas delimitado tu campo de interés y generado el archivo
-javascript con la asistencia de la inteligenica artificial, dedica
-tiempo a comprender a fondo a tu usuaria y sus
-necesidades específicas. A partir de esta comprensión, podrás diseñar la
-interfaz que facilite una interacción más efectiva y una comprensión más
-completa de los datos presentados.
-
-#### Prompt utilizado
-
-Dentro del readme que armarás, debe incluir una captura de pantalla
-de tu prompt utilizado para generar los datos. Si utilizaste varios prompts,
-puedes adjuntar todas las capturas que necesites.
-
-#### Diseño de la Interfaz de Usuaria
-
-##### Prototipo de alta fidelidad
-
-Usando los wireframes o bocetos (_sketches_) de tu solución de interfaz
-como base, lo siguiente es diseñar tu Interfaz de Usuaria (UI por sus
-siglas en inglés - _User Interface_). Para eso debes aprender a
-utilizar alguna herramienta de diseño visual.
-Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
-
-Recuerda pedir feedback de tu prototipo a tus compañeras y/o coaches.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarias,
-y con base en los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-#### Implementación de la Interfaz de Usuaria (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuaria deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar.
-
-Revisa [las funcionalidades](#3-funcionalidades) que el proyecto pide del interfaz.
 
 #### Pruebas unitarias
 
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas. Este proyecto usa
-el framework [Jest](https://jestjs.io/) para ejecutar las pruebas unitarias por lo
-que te recomendamos consultar su documentación.
+El _boilerplate_ de este proyecto no incluye pruebas unitarias (_tests_), así que se realiza las pruebas unitarias para testear las funciones de _visualizar_, _filtrar_ y _ordenar_ la data, así como _calcular el promedio de precio de los cruceros_. 
 
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/dataFunctions.js` que contenga tus funciones y
-está detallado en la sección de [Consideraciones técnicas](#src/data.js).
-
-## 7. Hacker edition
-
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-Features/características extra sugeridas:
-
-* Visualizar la estadística calculada mediante un gráfico. Para
-  ello te recomendamos explorar librerías de gráficas como
-  [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-* 100% Coverage
+Se usó el framework [Jest](https://jestjs.io/) para ejecutar las pruebas unitarias dando cobertura del 91.48% de _statements_
+(_sentencias_), 100% _functions_ (_funciones_), 90.47% _lines_ (_líneas_), y 80.55% _branches_ (_ramas_) del archivo `src/dataFunctions.js` que contiene las funciones. 
 
 ## 8. Objetivos de aprendizaje
-
-
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
 ### HTML
 
@@ -758,7 +474,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
 </p></details>
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- [x] **Uso de bucles/ciclos (while, for, for..of)**
 
   <details><summary>Links</summary><p>
 
@@ -799,13 +515,13 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
+- [x] **Git: Instalación y configuración**
 
 - [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
 - [x] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
 - [x] **GitHub: Despliegue con GitHub Pages**
 
@@ -828,7 +544,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Investigación
 
-- [ ] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
+- [x] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
 
   <details><summary>Links</summary><p>
 
@@ -853,48 +569,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 </p></details>
 
 ## 9. Pistas, tips y lecturas complementarias
-
-### Primeros pasos
-
-Súmate al canal de Slack
-[#project-dataverse](https://claseslaboratoria.slack.com/archives/C03MV35EP5M)
-para conversar y pedir ayuda del proyecto.
-
-Antes de empezar a escribir código, debes definir qué deberá hacer el
-producto con base en el conocimiento que puedas obtener de tu usuaria.
-Estas preguntas te pueden ayudar:
-
-* ¿Quiénes son las principales usuarias del producto?
-* ¿Cuáles son los objetivos de estas usuarias en relación con el producto?
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuaria de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
-
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
-
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. Para ver la interfaz de tu programa en el navegador, usa el comando
-  `npm start` para arrancar el servidor web y dirígete a
-  `http://localhost:5000` en tu navegador.
-6. A codear se ha dicho! :rocket:
-
-### Contenido de referencia
 
 #### Desarrollo Front-end
 
@@ -940,7 +614,9 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
   Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
 * [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
 
-## 10. Consideraciones para pedir tu Project Feedback
+## 10. Consideraciones para el Project Feedback
+
+Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
 
 * [x] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
 * [x] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
@@ -951,10 +627,10 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [x] Está subido a GitHub y desplegado en GitHub Pages
 * [x] Captura de pantalla del prompt utilizado para generar los datos.
 * Tiene un `README.md` con la siguente:
-  - [ ] _Definición del producto_ clara e informativa
+  - [x] _Definición del producto_ clara e informativa
   - [x] Historias de usuario
   - [x] Un _Diseño de la Interfaz de Usuaria_ (prototipo de alta fidelidad)
-  - [ ] El listado de problemas que detectaste a través de tests
+  - [x] El listado de problemas que detectaste a través de tests
     de usabilidad en el `README.md`
 * Tiene un UI que cumple las funcionalidades:
   - [x] Muestra lista con datos y/o indicadores
